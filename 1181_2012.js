@@ -138,5 +138,22 @@ this.ChangeCheckbox_1181 = function (itemId) {
         document.getElementById("71_1181_77826_164_1").checked = false;
     }
 
+
+    else if (itemId == "71_1181_77797_170_1" && isChecked == true) {
+        document.getElementById("71_1181_77797_170_2").checked = false;
+        document.getElementById("77804").style.display = "";
+       
     }
+    else if (itemId == "71_1181_77797_170_2" && isChecked == true) {
+        document.getElementById("71_1181_77797_170_1").checked = false;
+        document.getElementById("77804").style.display = "none";
+      
+        document.getElementById("71_1181_77804_180_1").checked = false;
+        document.getElementById("71_1181_77804_180_2").checked = false;
+    }
+
+    
+
+
+}
    
