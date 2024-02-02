@@ -133,4 +133,16 @@ this.ChangeCheckbox_1181 = function (itemId) {
         eval($("#71_1181_75486_181_1")).val("");
         eval($("#71_1181_75486_181_1")).prop("readonly", true);
     }
+
+
+
+    // else if (itemId == "71_1181_77827_190_1" && isChecked == true) {
+    //     document.getElementById("71_1181_77827_190_2").checked = false;
+    //     eval($("#71_1181_77828_191_1")).prop("readonly", false);
+    // }
+    // else if (itemId == "71_1181_77827_190_2" && isChecked == true) {
+    //     document.getElementById("71_1181_77827_190_1").checked = false;
+    //     eval($("#71_1181_77828_191_1")).val("");
+    //     eval($("#71_1181_77828_191_1")).prop("readonly", true);
+    // }
 }
