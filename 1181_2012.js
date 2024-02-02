@@ -3,6 +3,8 @@ $(document).ready(function () {
 });
 this.ChangeCheckbox_1181 = function (itemId) {
     var isChecked = document.getElementById(itemId).checked;
+    
+    
     if (itemId == "71_1181_77798_130_1" && isChecked == true) {
         document.getElementById("71_1181_77798_130_2").checked = false;
         document.getElementById("77821").style.display = "";
@@ -143,13 +145,10 @@ this.ChangeCheckbox_1181 = function (itemId) {
     }
     else if (itemId == "71_1181_77811_165_1" && isChecked == true) {
         document.getElementById("71_1181_77824_161_1").checked = false;
-        eval($("#71_1181_77824_161_1")).prop("readonly", true);
         document.getElementById("71_1181_77799_162_1").checked = false;
-        eval($("#71_1181_77799_162_1")).prop("readonly", true);
         document.getElementById("71_1181_77825_163_1").checked = false;
-        eval($("#71_1181_77825_163_1")).prop("readonly", true);
         document.getElementById("71_1181_77826_164_1").checked = false;
-        eval($("#71_1181_77826_164_1")).prop("readonly", true);
+        
     }
 
    
@@ -167,8 +166,56 @@ this.ChangeCheckbox_1181 = function (itemId) {
         document.getElementById("71_1181_77804_180_2").checked = false;
     }
 
+   
     
+ //
 
+    // ROW 180 Start
+    if (itemId == "71_1181_77804_180_1" && isChecked == true) {
+        document.getElementById("71_1181_77804_180_2").checked = false;
+        
+        //document.getElementById("77810").style.display = "";
+      
+        document.getElementById("77827").style.display = ""; // 
+        document.getElementById("77828").style.display = "";
+        document.getElementById("77829").style.display = "";
+        document.getElementById("77830").style.display = ""; //
+        document.getElementById("77831").style.display = ""; //
+        document.getElementById("77832").style.display = ""; //
+        document.getElementById("77833").style.display = ""; //
+       // document.getElementById("77791").style.display = "";
+       // document.getElementById("77804").style.display = "";
+}
+    else if (itemId == "71_1181_77804_180_2" && isChecked == true) {
+        document.getElementById("71_1181_77804_180_1").checked = false;
+        
+        document.getElementById("71_1181_77827_190_1").checked = false; 
+        document.getElementById("71_1181_77830_192_1").checked = false;
+        eval($("#71_1181_77828_191_1")).val("");
+        document.getElementById("71_1181_77831_193_1").checked = false;
+        document.getElementById("71_1181_77832_194_1").checked = false;
+        document.getElementById("71_1181_77833_195_1").checked = false;
+
+
+        document.getElementById("71_1181_77828_191_1").value = "";
+        
+        //document.getElementById("77810").style.display = "none";
+       
+     //   document.getElementById("77826").style.display = "none";
+        document.getElementById("77827").style.display = "none"; //
+        document.getElementById("77828").style.display = "none";
+        document.getElementById("77829").style.display = "none"; //
+        document.getElementById("77830").style.display = "none"; //
+        document.getElementById("77831").style.display = "none"; //
+        document.getElementById("77832").style.display = "none"; //
+        document.getElementById("77833").style.display = "none"; //
+   //   document.getElementById("77791").style.display = "none";
+   //   document.getElementById("77804").style.display = "none";
+
+
+    }
+        // ROW 180 End+
+ 
 
 }
    
