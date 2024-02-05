@@ -217,5 +217,38 @@ this.ChangeCheckbox_1181 = function (itemId) {
         // ROW 180 End+
  
 
+
+
+//Start row 190
+
+    else if (itemId == "71_1181_77827_190_1" && isChecked == true) {
+        document.getElementById("71_1181_77827_190_2").checked = false;
+        eval($("#71_1181_77828_191_1")).prop("readonly", false);
+    }
+    else if (itemId == "71_1181_77827_190_2" && isChecked == true) {
+        document.getElementById("71_1181_77827_190_1").checked = false;
+        eval($("#71_1181_77828_191_1")).val("");
+        eval($("#71_1181_77828_191_1")).prop("readonly", true);
+    }
+
+//End row 190
+
+
+
+    //Start row 192
+
+    else if (itemId == "71_1181_77830_192_1" && isChecked == true) {
+        document.getElementById("71_1181_77830_192_2").checked = false;
+       
+    }
+    else if (itemId == "71_1181_77830_192_2" && isChecked == true) {
+        document.getElementById("71_1181_77830_192_1").checked = false;
+
+    }
+
+    //End row 192
+
+        
+
 }
    
