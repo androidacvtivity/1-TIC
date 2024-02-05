@@ -235,6 +235,19 @@ this.ChangeCheckbox_1181 = function (itemId) {
 
 
 
+    //Start row 192
+
+    else if (itemId == "71_1181_77830_192_1" && isChecked == true) {
+        document.getElementById("71_1181_77830_192_2").checked = false;
+       
+    }
+    else if (itemId == "71_1181_77830_192_2" && isChecked == true) {
+        document.getElementById("71_1181_77830_192_1").checked = false;
+
+    }
+
+    //End row 192
+
         
 
 }
