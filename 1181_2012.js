@@ -38,19 +38,28 @@ this.ChangeCheckbox_1181 = function (itemId) {
         document.getElementById("71_1181_77823_150_2").checked = false;
         document.getElementById("71_1181_77821_140_1").checked = false;
         document.getElementById("71_1181_77821_140_2").checked = false;
+
         document.getElementById("71_1181_77824_161_1").checked = false;
         document.getElementById("71_1181_77799_162_1").checked = false;
         document.getElementById("71_1181_77825_163_1").checked = false;
         document.getElementById("71_1181_77826_164_1").checked = false;
         document.getElementById("71_1181_77811_165_1").checked = false;
+
         document.getElementById("71_1181_77797_170_1").checked = false;
+        document.getElementById("71_1181_77797_170_2").checked = false;
         document.getElementById("71_1181_77804_180_1").checked = false;
+        document.getElementById("71_1181_77804_180_2").checked = false;
         document.getElementById("71_1181_77827_190_1").checked = false;
+        document.getElementById("71_1181_77827_190_2").checked = false;
         document.getElementById("71_1181_77830_192_1").checked = false;
+        document.getElementById("71_1181_77830_192_2").checked = false;
         eval($("#71_1181_77828_191_1")).val("");
         document.getElementById("71_1181_77831_193_1").checked = false;
+        document.getElementById("71_1181_77831_193_2").checked = false;
         document.getElementById("71_1181_77832_194_1").checked = false;
+        document.getElementById("71_1181_77832_194_2").checked = false;
         document.getElementById("71_1181_77833_195_1").checked = false;
+        document.getElementById("71_1181_77833_195_2").checked = false;
 
 
         
