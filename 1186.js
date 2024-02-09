@@ -94,31 +94,31 @@ this.ChangeCheckbox_1186 = function (itemId) {
         document.getElementById("71_1186_75551_683_2").checked = false;
         document.getElementById("71_1186_75552_684_1").checked = false;
         document.getElementById("71_1186_75552_684_2").checked = false;
-        document.getElementById("71_1186_75547_670_1").value = "";
+        document.getElementById("71_1186_77956_670_1").value = "";
     }
-    else if (itemId == "71_1186_75549_681_1" && isChecked == true) {
-        document.getElementById("71_1186_75549_681_2").checked = false;
+    else if (itemId == "71_1186_77928_681_1" && isChecked == true) {
+        document.getElementById("71_1186_77928_681_2").checked = false;
     }
-    else if (itemId == "71_1186_75549_681_2" && isChecked == true) {
-        document.getElementById("71_1186_75549_681_1").checked = false;
+    else if (itemId == "71_1186_77928_681_2" && isChecked == true) {
+        document.getElementById("71_1186_77928_681_1").checked = false;
     }
-    else if (itemId == "71_1186_75550_682_1" && isChecked == true) {
-        document.getElementById("71_1186_75550_682_2").checked = false;
+    else if (itemId == "71_1186_77933_682_1" && isChecked == true) {
+        document.getElementById("71_1186_77933_682_2").checked = false;
     }
-    else if (itemId == "71_1186_75550_682_2" && isChecked == true) {
-        document.getElementById("71_1186_75550_682_1").checked = false;
+    else if (itemId == "71_1186_77933_682_2" && isChecked == true) {
+        document.getElementById("71_1186_77933_682_1").checked = false;
     }
-    else if (itemId == "71_1186_75551_683_1" && isChecked == true) {
-        document.getElementById("71_1186_75551_683_2").checked = false;
+    else if (itemId == "71_1186_77929_683_1" && isChecked == true) {
+        document.getElementById("71_1186_77929_683_2").checked = false;
     }
-    else if (itemId == "71_1186_75551_683_2" && isChecked == true) {
-        document.getElementById("71_1186_75551_683_1").checked = false;
+    else if (itemId == "71_1186_77929_683_2" && isChecked == true) {
+        document.getElementById("71_1186_77929_683_1").checked = false;
     }
-    else if (itemId == "71_1186_75552_684_1" && isChecked == true) {
-        document.getElementById("71_1186_75552_684_2").checked = false;
+    else if (itemId == "71_1186_77944_684_1" && isChecked == true) {
+        document.getElementById("71_1186_77944_684_2").checked = false;
     }
-    else if (itemId == "71_1186_75552_684_2" && isChecked == true) {
-        document.getElementById("71_1186_75552_684_1").checked = false;
+    else if (itemId == "71_1186_77944_684_2" && isChecked == true) {
+        document.getElementById("71_1186_77944_684_1").checked = false;
     }
     if (itemId == "71_1186_75530_611_2" && document.getElementById("71_1186_75531_612_2").checked == true) {
         document.getElementById("75532").style.display = "none";
