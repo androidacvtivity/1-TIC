@@ -31,17 +31,17 @@ function f1INVESTA_CAPII() {
 
 this.ChangeCheckbox_1186 = function (itemId) {
     var isChecked = document.getElementById(itemId).checked;
-    if (itemId == "71_1186_75530_611_1" && isChecked == true) {
-        document.getElementById("71_1186_75530_611_2").checked = false;
+    if (itemId == "71_1186_78025_611_1" && isChecked == true) {
+        document.getElementById("71_1186_78025_611_2").checked = false;
     }
-    else if (itemId == "71_1186_75530_611_2" && isChecked == true) {
-        document.getElementById("71_1186_75530_611_1").checked = false;
+    else if (itemId == "71_1186_78025_611_2" && isChecked == true) {
+        document.getElementById("71_1186_78025_611_1").checked = false;
     }
-    else if (itemId == "71_1186_75531_612_1" && isChecked == true) {
-        document.getElementById("71_1186_75531_612_2").checked = false;
+    else if (itemId == "71_1186_77959_612_1" && isChecked == true) {
+        document.getElementById("71_1186_77959_612_2").checked = false;
     }
-    else if (itemId == "71_1186_75531_612_2" && isChecked == true) {
-        document.getElementById("71_1186_75531_612_1").checked = false;
+    else if (itemId == "71_1186_77959_612_2" && isChecked == true) {
+        document.getElementById("71_1186_77959_612_1").checked = false;
     }
     else if (itemId == "71_1186_75542_651_1" && isChecked == true) {
         document.getElementById("71_1186_75542_651_2").checked = false;
