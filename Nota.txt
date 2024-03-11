@@ -5,3 +5,11 @@
 
 
 71-004
+
+
+In html need (inclusiv linie fixă și
+                conexiune mobilă) - underline 
+
+<td><strong>4. Personalul are acces la Internet în scop profesional / interes de serviciu ? </strong> (inclusiv linie fixă și
+                conexiune mobilă)</td>
+
