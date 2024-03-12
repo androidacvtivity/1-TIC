@@ -183,19 +183,7 @@
                     jQuery('#CAPITOL3_R324').hide(); jQuery('#CAPITOL3_R325').hide(); jQuery('#CAPITOL3_R326').hide(); jQuery('#CAPITOL3_R327').hide();
                     jQuery('#CAPITOL3_R328').hide(); jQuery('#CAPITOL3_R329').hide(); jQuery('#CAPITOL3_R330').hide();
                     
-                    // jQuery('#CAPITOL3_R321_C1').attr("checked", false); jQuery('#CAPITOL3_R321_C2').attr("checked", false);
-                    // jQuery('#CAPITOL3_R322_C1').attr("checked", false); jQuery('#CAPITOL3_R322_C2').attr("checked", false);
-                    // jQuery('#CAPITOL3_R323_C1').attr("checked", false); jQuery('#CAPITOL3_R323_C2').attr("checked", false);
-                    // jQuery('#CAPITOL3_R324_C1').attr("checked", false); jQuery('#CAPITOL3_R324_C2').attr("checked", false);
-                    // jQuery('#CAPITOL3_R325_C1').attr("checked", false); jQuery('#CAPITOL3_R325_C2').attr("checked", false);
-                    // jQuery('#CAPITOL3_R326_C1').attr("checked", false); jQuery('#CAPITOL3_R326_C2').attr("checked", false);
-                    // jQuery('#CAPITOL3_R327_C1').attr("checked", false); jQuery('#CAPITOL3_R327_C2').attr("checked", false);
-                    // jQuery('#CAPITOL3_R328_C1').attr("checked", false); jQuery('#CAPITOL3_R328_C2').attr("checked", false);
-                    // jQuery('#CAPITOL3_R329_C1').attr("checked", false); jQuery('#CAPITOL3_R329_C2').attr("checked", false);
-                    // jQuery('#CAPITOL3_R330_C1').attr("checked", false); jQuery('#CAPITOL3_R330_C2').attr("checked", false);
-
-
-                    jQuery('#CAPITOL3_R321_C1').attr("checked", false); jQuery('#CAPITOL3_R321_C2').attr("checked", false);
+                   jQuery('#CAPITOL3_R321_C1').attr("checked", false); jQuery('#CAPITOL3_R321_C2').attr("checked", false);
                     jQuery('#CAPITOL3_R322_C1').attr("checked", false); jQuery('#CAPITOL3_R322_C2').attr("checked", false);
                     jQuery('#CAPITOL3_R323_C1').attr("checked", false); jQuery('#CAPITOL3_R323_C2').attr("checked", false);
                     jQuery('#CAPITOL3_R324_C1').attr("checked", false); jQuery('#CAPITOL3_R324_C2').attr("checked", false);
