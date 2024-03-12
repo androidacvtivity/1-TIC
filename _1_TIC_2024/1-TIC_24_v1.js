@@ -69,7 +69,8 @@
                     jQuery('#CAPITOL7').hide(); jQuery('#CAPITOL7_HEADER').hide(); jQuery('#CAPITOL7_HEADER_NOTE').hide();
                     jQuery('#CAPITOL1_R140').hide(); jQuery('#CAPITOL1_R141').hide(); jQuery('#CAPITOL1_R150').hide();
                     jQuery('#CAPITOL1_R160').hide(); jQuery('#CAPITOL1_R161').hide(); jQuery('#CAPITOL1_R162').hide(); jQuery('#CAPITOL1_R163').hide(); jQuery('#CAPITOL1_R164').hide();
-                    jQuery('#CAPITOL1_R165').hide(); jQuery('#CAPITOL1_R170').hide(); jQuery('#CAPITOL1_R180').hide(); jQuery('#CAPITOL1_R181').hide();
+                    jQuery('#CAPITOL1_R165').hide(); jQuery('#CAPITOL1_R170').hide(); jQuery('#CAPITOL1_R180').hide(); jQuery('#CAPITOL1_R190').hide();
+                    jQuery('#CAPITOL1_R191').hide(); jQuery('#CAPITOL1_R192').hide(); jQuery('#CAPITOL1_R193').hide(); jQuery('#CAPITOL1_R194').hide(); jQuery('#CAPITOL1_R195').hide();
                     jQuery('#CAPITOL1_R140_C1').attr("checked", false); jQuery('#CAPITOL1_R140_C2').attr("checked", false);
                     document.getElementById("CAPITOL1_R141_C1").value = "";
                     jQuery('#CAPITOL1_R150_C1').attr("checked", false); jQuery('#CAPITOL1_R150_C2').attr("checked", false);
