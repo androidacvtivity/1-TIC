@@ -104,6 +104,7 @@
                     jQuery('#CAPITOL3_R328_C1').attr("checked", false); jQuery('#CAPITOL3_R328_C2').attr("checked", false);
                     jQuery('#CAPITOL3_R329_C1').attr("checked", false); jQuery('#CAPITOL3_R329_C2').attr("checked", false);
                     jQuery('#CAPITOL3_R330_C1').attr("checked", false); jQuery('#CAPITOL3_R330_C2').attr("checked", false);
+                    jQuery('#CAPITOL4_R410_C1').attr("checked", false); jQuery('#CAPITOL4_R410_C2').attr("checked", false);
                     jQuery('#CAPITOL4_R411_C1').attr("checked", false); jQuery('#CAPITOL4_R411_C2').attr("checked", false);
                     jQuery('#CAPITOL4_R412_C1').attr("checked", false); jQuery('#CAPITOL4_R412_C2').attr("checked", false);
                     jQuery('#CAPITOL4_R413_C1').attr("checked", false); jQuery('#CAPITOL4_R413_C2').attr("checked", false);
@@ -378,6 +379,17 @@
             });
         }
 
+
+        if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL2_R230_C1 == true || values.CAPITOL2_R230_C2 == true)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL2_R230_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-001.13.1 Rind.130 este Da atunci Rind.230 trebuie sa fie selectat DA sau NU')
+            });
+        }
+
+
+
         if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL3_R310_C1 == true || values.CAPITOL3_R310_C2 == true)) {
             webform.errors.push({
                 'fieldName': 'CAPITOL3_R310_C1',
@@ -465,6 +477,18 @@
                 'msg': Drupal.t('Cod eroare: 71-001.24. Rind.310 este Da atunci Rind.330 trebuie sa fie selectat DA sau NU')
             });
         }
+
+
+        if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R410_C1 == true || values.CAPITOL4_R410_C2 == true)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL4_R410_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-001.25.1. Rind.130 este Da atunci Rind.410 trebuie sa fie selectat DA sau NU')
+            });
+        }
+
+
+
 
         if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R411_C1 == true || values.CAPITOL4_R411_C2 == true)) {
             webform.errors.push({
@@ -574,14 +598,14 @@
             webform.errors.push({
                 'fieldName': 'CAPITOL4_R423_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.38. Rind.130 este Da atunci Rind.423 trebuie sa fie selectat DA sau NU')
+                'msg': Drupal.t('Cod eroare: 71-001.39. Rind.130 este Da atunci Rind.423 trebuie sa fie selectat DA sau NU')
             });
         }
         if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R424_C1 == true || values.CAPITOL4_R424_C2 == true)) {
             webform.errors.push({
                 'fieldName': 'CAPITOL4_R424_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.38. Rind.130 este Da atunci Rind.424 trebuie sa fie selectat DA sau NU')
+                'msg': Drupal.t('Cod eroare: 71-001.40. Rind.130 este Da atunci Rind.424 trebuie sa fie selectat DA sau NU')
             });
         }
 
@@ -590,7 +614,7 @@
             webform.errors.push({
                 'fieldName': 'CAPITOL4_R425_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.38. Rind.130 este Da atunci Rind.425 trebuie sa fie selectat DA sau NU')
+                'msg': Drupal.t('Cod eroare: 71-001.41. Rind.130 este Da atunci Rind.425 trebuie sa fie selectat DA sau NU')
             });
         }
 
@@ -599,7 +623,7 @@
             webform.errors.push({
                 'fieldName': 'CAPITOL4_R426_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.38. Rind.130 este Da atunci Rind.426 trebuie sa fie selectat DA sau NU')
+                'msg': Drupal.t('Cod eroare: 71-001.42. Rind.130 este Da atunci Rind.426 trebuie sa fie selectat DA sau NU')
             });
         }
 

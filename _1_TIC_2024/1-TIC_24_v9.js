@@ -378,6 +378,17 @@
             });
         }
 
+
+        if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL2_R230_C1 == true || values.CAPITOL2_R230_C2 == true)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL2_R230_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-001.13.1 Rind.130 este Da atunci Rind.230 trebuie sa fie selectat DA sau NU')
+            });
+        }
+
+
+
         if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL3_R310_C1 == true || values.CAPITOL3_R310_C2 == true)) {
             webform.errors.push({
                 'fieldName': 'CAPITOL3_R310_C1',
@@ -574,14 +585,14 @@
             webform.errors.push({
                 'fieldName': 'CAPITOL4_R423_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.38. Rind.130 este Da atunci Rind.423 trebuie sa fie selectat DA sau NU')
+                'msg': Drupal.t('Cod eroare: 71-001.39. Rind.130 este Da atunci Rind.423 trebuie sa fie selectat DA sau NU')
             });
         }
         if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R424_C1 == true || values.CAPITOL4_R424_C2 == true)) {
             webform.errors.push({
                 'fieldName': 'CAPITOL4_R424_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.38. Rind.130 este Da atunci Rind.424 trebuie sa fie selectat DA sau NU')
+                'msg': Drupal.t('Cod eroare: 71-001.40. Rind.130 este Da atunci Rind.424 trebuie sa fie selectat DA sau NU')
             });
         }
 
@@ -590,7 +601,7 @@
             webform.errors.push({
                 'fieldName': 'CAPITOL4_R425_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.38. Rind.130 este Da atunci Rind.425 trebuie sa fie selectat DA sau NU')
+                'msg': Drupal.t('Cod eroare: 71-001.41. Rind.130 este Da atunci Rind.425 trebuie sa fie selectat DA sau NU')
             });
         }
 
@@ -599,7 +610,7 @@
             webform.errors.push({
                 'fieldName': 'CAPITOL4_R426_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.38. Rind.130 este Da atunci Rind.426 trebuie sa fie selectat DA sau NU')
+                'msg': Drupal.t('Cod eroare: 71-001.42. Rind.130 este Da atunci Rind.426 trebuie sa fie selectat DA sau NU')
             });
         }
 
