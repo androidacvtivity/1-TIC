@@ -328,6 +328,7 @@
                 }
 
                 else if (group == "CAPITOL9_R910_C2") {
+                    jQuery('#CAPITOL9_R920').hide();
                     jQuery('#CAPITOL9_R921').hide();
                     jQuery('#CAPITOL9_R922').hide();
                     jQuery('#CAPITOL9_R923').hide();
@@ -346,6 +347,7 @@
 
                 }
                 else if (group == "CAPITOL9_R910_C1") {
+                    jQuery('#CAPITOL9_R920').show();
                     jQuery('#CAPITOL9_R921').show();
                     jQuery('#CAPITOL9_R922').show();
                     jQuery('#CAPITOL9_R923').show();

@@ -328,6 +328,7 @@
                 }
 
                 else if (group == "CAPITOL9_R910_C2") {
+                    jQuery('#CAPITOL9_R920').hide();
                     jQuery('#CAPITOL9_R921').hide();
                     jQuery('#CAPITOL9_R922').hide();
                     jQuery('#CAPITOL9_R923').hide();
@@ -343,9 +344,44 @@
                     jQuery('#CAPITOL9_R951').hide();
                     jQuery('#CAPITOL9_R961').hide();
                     jQuery('#CAPITOL9_R971').hide();
+                    jQuery('#CAPITOL9_R921_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R921_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R922_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R922_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R923_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R923_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R924_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R924_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R925_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R925_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R926_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R926_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R927_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R927_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R931_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R931_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R932_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R932_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R933_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R933_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R941_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R941_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R951_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R951_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R961_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R961_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R971_C1').attr("checked", false);
+                    jQuery('#CAPITOL9_R971_C1').attr("checked", false);
+
+
+
+
+
+
 
                 }
                 else if (group == "CAPITOL9_R910_C1") {
+                    jQuery('#CAPITOL9_R920').show();
                     jQuery('#CAPITOL9_R921').show();
                     jQuery('#CAPITOL9_R922').show();
                     jQuery('#CAPITOL9_R923').show();
