@@ -10,10 +10,10 @@
             });
             var rows1hideClear = [140, 150, 161, 162, 163, 164, 165, 170, 180, 210, 221, 222, 223, 224, 310, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 430,
                 421, 422, 423, 511, 512, 513, 514, 515, 520, 611, 612, 651, 652, 653, 654, 660, 681, 682, 683, 684, 710, 721, 722]
-            CAEMhide();
-            jQuery('select').change(function () {
-                CAEMhide();
-            });
+            // CAEMhide();
+            // jQuery('select').change(function () {
+            //     CAEMhide();
+            // });
 
             jQuery('input[type=checkbox]').change(function () {
                 var state = jQuery(this).is(':checked');
@@ -60,13 +60,15 @@
                     jQuery('#CAPITOL1_R164_C1').attr("checked", false);
                 }
 
-                if (group == "CAPITOL1_R130_C2") {
+                else if (group == "CAPITOL1_R130_C2") {
                     jQuery('#CAPITOL2').hide(); jQuery('#CAPITOL2_HEADER').hide();
                     jQuery('#CAPITOL3').hide(); jQuery('#CAPITOL3_HEADER').hide();
                     jQuery('#CAPITOL4').hide(); jQuery('#CAPITOL4_HEADER').hide();
                     jQuery('#CAPITOL5').hide(); jQuery('#CAPITOL5_HEADER').hide(); jQuery('#CAPITOL5_HEADER_NOTE').hide();
                     jQuery('#CAPITOL6').hide(); jQuery('#CAPITOL6_HEADER').hide(); jQuery('#CAPITOL6_HEADER_NOTE').hide();
                     jQuery('#CAPITOL7').hide(); jQuery('#CAPITOL7_HEADER').hide(); jQuery('#CAPITOL7_HEADER_NOTE').hide();
+
+
                     jQuery('#CAPITOL1_R140').hide(); jQuery('#CAPITOL1_R141').hide(); jQuery('#CAPITOL1_R150').hide();
                     jQuery('#CAPITOL1_R160').hide(); jQuery('#CAPITOL1_R161').hide(); jQuery('#CAPITOL1_R162').hide(); jQuery('#CAPITOL1_R163').hide(); jQuery('#CAPITOL1_R164').hide();
                     jQuery('#CAPITOL1_R165').hide(); jQuery('#CAPITOL1_R170').hide(); jQuery('#CAPITOL1_R180').hide(); jQuery('#CAPITOL1_R190').hide();
@@ -75,7 +77,8 @@
                     jQuery('#CAPITOL1_R140_C1').attr("checked", false); jQuery('#CAPITOL1_R140_C2').attr("checked", false);
                     document.getElementById("CAPITOL1_R141_C1").value = "";
                     jQuery('#CAPITOL1_R150_C1').attr("checked", false); jQuery('#CAPITOL1_R150_C2').attr("checked", false);
-                    jQuery('#CAPITOL1_R161_C1').attr("checked", false); jQuery('#CAPITOL1_R162_C1').attr("checked", false); jQuery('#CAPITOL1_R163_C1').attr("checked", false);
+                    jQuery('#CAPITOL1_R161_C1').attr("checked", false); jQuery('#CAPITOL1_R162_C1').attr("checked", false); 
+                    jQuery('#CAPITOL1_R163_C1').attr("checked", false);
                     jQuery('#CAPITOL1_R164_C1').attr("checked", false); jQuery('#CAPITOL1_R165_C1').attr("checked", false);
                     jQuery('#CAPITOL1_R170_C1').attr("checked", false); jQuery('#CAPITOL1_R170_C2').attr("checked", false);
                     jQuery('#CAPITOL1_R180_C1').attr("checked", false); jQuery('#CAPITOL1_R180_C2').attr("checked", false);
@@ -177,10 +180,25 @@
                     jQuery('#CAPITOL5').show(); jQuery('#CAPITOL5_HEADER').show(); jQuery('#CAPITOL5_HEADER_NOTE').show();
                     jQuery('#CAPITOL6').show(); jQuery('#CAPITOL6_HEADER').show(); jQuery('#CAPITOL6_HEADER_NOTE').show();
                     jQuery('#CAPITOL7').show(); jQuery('#CAPITOL7_HEADER').show(); jQuery('#CAPITOL7_HEADER_NOTE').show();
+
+
+                    // jQuery('#CAPITOL2').hide(); jQuery('#CAPITOL2_HEADER').hide();
+                    // jQuery('#CAPITOL3').hide(); jQuery('#CAPITOL3_HEADER').hide();
+                    // jQuery('#CAPITOL4').hide(); jQuery('#CAPITOL4_HEADER').hide();
+                    // jQuery('#CAPITOL5').hide(); jQuery('#CAPITOL5_HEADER').hide(); jQuery('#CAPITOL5_HEADER_NOTE').hide();
+                    // jQuery('#CAPITOL6').hide(); jQuery('#CAPITOL6_HEADER').hide(); jQuery('#CAPITOL6_HEADER_NOTE').hide();
+                    // jQuery('#CAPITOL7').hide(); jQuery('#CAPITOL7_HEADER').hide(); jQuery('#CAPITOL7_HEADER_NOTE').hide();
+
+
+
+
+
                     jQuery('#CAPITOL1_R140').show(); jQuery('#CAPITOL1_R141').show(); jQuery('#CAPITOL1_R150').show(); jQuery('#CAPITOL1_R161').show();
                     jQuery('#CAPITOL1_R162').show(); jQuery('#CAPITOL1_R163').show(); jQuery('#CAPITOL1_R164').show(); jQuery('#CAPITOL1_R165').show();
-                    jQuery('#CAPITOL1_R170').show(); jQuery('#CAPITOL1_R180').show(); jQuery('#CAPITOL1_R190').show(); jQuery('#CAPITOL1_R191').show();
-                    jQuery('#CAPITOL1_R192').show(); jQuery('#CAPITOL1_R193').show(); jQuery('#CAPITOL1_R194').show(); jQuery('#CAPITOL1_R195').show();
+                    jQuery('#CAPITOL1_R170').show(); jQuery('#CAPITOL1_R180').show(); jQuery('#CAPITOL1_R190').show(); 
+                    jQuery('#CAPITOL1_R191').show();
+                    jQuery('#CAPITOL1_R192').show(); 
+                    jQuery('#CAPITOL1_R193').show(); jQuery('#CAPITOL1_R194').show(); jQuery('#CAPITOL1_R195').show();
                 }
                 else if (group == "CAPITOL1_R150_C2") {
                     jQuery('#CAPITOL1_R160').hide(); jQuery('#CAPITOL1_R161').hide(); jQuery('#CAPITOL1_R162').hide(); jQuery('#CAPITOL1_R163').hide(); jQuery('#CAPITOL1_R164').hide();
@@ -244,19 +262,19 @@
                     jQuery('#CAPITOL6_R640').show(); jQuery('#CAPITOL6_R641').show(); jQuery('#CAPITOL6_R642').show(); jQuery('#CAPITOL6_R643').show(); jQuery('#CAPITOL6_R650').show();
                     jQuery('#CAPITOL6_R651').show(); jQuery('#CAPITOL6_R652').show(); jQuery('#CAPITOL6_R653').show(); jQuery('#CAPITOL6_R654').show();
                 }
-                if (group == "CAPITOL1_R140_C2") {
+               else if (group == "CAPITOL1_R140_C2") {
                     jQuery('#CAPITOL1_R141').hide();
                 }
                 else if (group == "CAPITOL1_R140_C1") {
                     jQuery('#CAPITOL1_R141').show();
                 }
-                if (group == "CAPITOL1_R180_C2") {
+                else if (group == "CAPITOL1_R180_C2") {
                     jQuery('#CAPITOL1_R181').hide();
                 }
                 else if (group == "CAPITOL1_R180_C1") {
                     jQuery('#CAPITOL1_R181').show();
                 }
-                if (group == "CAPITOL6_R660_C2") {
+                else if (group == "CAPITOL6_R660_C2") {
                     jQuery('#CAPITOL6_R670').hide(); jQuery('#CAPITOL6_R680').hide(); jQuery('#CAPITOL6_R681').hide(); jQuery('#CAPITOL6_R682').hide();
                     jQuery('#CAPITOL6_R683').hide(); jQuery('#CAPITOL6_R684').hide();
                     document.getElementById("CAPITOL6_R670_C1").value = "";

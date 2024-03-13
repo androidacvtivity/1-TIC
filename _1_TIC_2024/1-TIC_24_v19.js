@@ -15,261 +15,276 @@
                 CAEMhide();
             });
 
-            jQuery('input[type=checkbox]').change(function () {
-                var state = jQuery(this).is(':checked');
-                var group = jQuery(this).attr('name');
-                var pos = group.indexOf('_R');
-                var res = group.substr(0, pos !== false ? pos + 5 : 0);
+            // jQuery('input[type=checkbox]').change(function () {
+            //     var state = jQuery(this).is(':checked');
+            //     var group = jQuery(this).attr('name');
+            //     var pos = group.indexOf('_R');
+            //     var res = group.substr(0, pos !== false ? pos + 5 : 0);
 
-                var lengthChecs = null
-                jQuery('input[type=checkbox]').each(function () {
-                    if (jQuery(this).attr('name').indexOf(res) !== -1) {
-                        jQuery(this).removeAttr('checked');
-                        lengthChecs++;
-                    }
-                });
-                jQuery(this).prop('checked', state);
-                if (group == "CAPITOL1_R161_C1") {
-                    jQuery('#CAPITOL1_R162_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R163_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R164_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R165_C1').attr("checked", false);
-                }
-                else if (group == "CAPITOL1_R162_C1") {
-                    jQuery('#CAPITOL1_R161_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R163_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R164_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R165_C1').attr("checked", false);
-                }
-                else if (group == "CAPITOL1_R163_C1") {
-                    jQuery('#CAPITOL1_R161_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R162_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R164_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R165_C1').attr("checked", false);
-                }
-                else if (group == "CAPITOL1_R164_C1") {
-                    jQuery('#CAPITOL1_R161_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R162_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R163_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R165_C1').attr("checked", false);
-                }
-                else if (group == "CAPITOL1_R165_C1") {
-                    jQuery('#CAPITOL1_R161_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R162_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R163_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R164_C1').attr("checked", false);
-                }
+            //     var lengthChecs = null
+            //     jQuery('input[type=checkbox]').each(function () {
+            //         if (jQuery(this).attr('name').indexOf(res) !== -1) {
+            //             jQuery(this).removeAttr('checked');
+            //             lengthChecs++;
+            //         }
+            //     });
+            //     jQuery(this).prop('checked', state);
+            //     if (group == "CAPITOL1_R161_C1") {
+            //         jQuery('#CAPITOL1_R162_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R163_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R164_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R165_C1').attr("checked", false);
+            //     }
+            //     else if (group == "CAPITOL1_R162_C1") {
+            //         jQuery('#CAPITOL1_R161_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R163_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R164_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R165_C1').attr("checked", false);
+            //     }
+            //     else if (group == "CAPITOL1_R163_C1") {
+            //         jQuery('#CAPITOL1_R161_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R162_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R164_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R165_C1').attr("checked", false);
+            //     }
+            //     else if (group == "CAPITOL1_R164_C1") {
+            //         jQuery('#CAPITOL1_R161_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R162_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R163_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R165_C1').attr("checked", false);
+            //     }
+            //     else if (group == "CAPITOL1_R165_C1") {
+            //         jQuery('#CAPITOL1_R161_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R162_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R163_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R164_C1').attr("checked", false);
+            //     }
 
-                if (group == "CAPITOL1_R130_C2") {
-                    jQuery('#CAPITOL2').hide(); jQuery('#CAPITOL2_HEADER').hide();
-                    jQuery('#CAPITOL3').hide(); jQuery('#CAPITOL3_HEADER').hide();
-                    jQuery('#CAPITOL4').hide(); jQuery('#CAPITOL4_HEADER').hide();
-                    jQuery('#CAPITOL5').hide(); jQuery('#CAPITOL5_HEADER').hide(); jQuery('#CAPITOL5_HEADER_NOTE').hide();
-                    jQuery('#CAPITOL6').hide(); jQuery('#CAPITOL6_HEADER').hide(); jQuery('#CAPITOL6_HEADER_NOTE').hide();
-                    jQuery('#CAPITOL7').hide(); jQuery('#CAPITOL7_HEADER').hide(); jQuery('#CAPITOL7_HEADER_NOTE').hide();
-                    jQuery('#CAPITOL1_R140').hide(); jQuery('#CAPITOL1_R141').hide(); jQuery('#CAPITOL1_R150').hide();
-                    jQuery('#CAPITOL1_R160').hide(); jQuery('#CAPITOL1_R161').hide(); jQuery('#CAPITOL1_R162').hide(); jQuery('#CAPITOL1_R163').hide(); jQuery('#CAPITOL1_R164').hide();
-                    jQuery('#CAPITOL1_R165').hide(); jQuery('#CAPITOL1_R170').hide(); jQuery('#CAPITOL1_R180').hide(); jQuery('#CAPITOL1_R190').hide();
-                    jQuery('#CAPITOL1_R191').hide(); jQuery('#CAPITOL1_R192').hide(); jQuery('#CAPITOL1_R193').hide(); jQuery('#CAPITOL1_R194').hide(); 
-                    jQuery('#CAPITOL1_R195').hide(); jQuery('#CAPITOL1_R192_Head').hide();
-                    jQuery('#CAPITOL1_R140_C1').attr("checked", false); jQuery('#CAPITOL1_R140_C2').attr("checked", false);
-                    document.getElementById("CAPITOL1_R141_C1").value = "";
-                    jQuery('#CAPITOL1_R150_C1').attr("checked", false); jQuery('#CAPITOL1_R150_C2').attr("checked", false);
-                    jQuery('#CAPITOL1_R161_C1').attr("checked", false); jQuery('#CAPITOL1_R162_C1').attr("checked", false); jQuery('#CAPITOL1_R163_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R164_C1').attr("checked", false); jQuery('#CAPITOL1_R165_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R170_C1').attr("checked", false); jQuery('#CAPITOL1_R170_C2').attr("checked", false);
-                    jQuery('#CAPITOL1_R180_C1').attr("checked", false); jQuery('#CAPITOL1_R180_C2').attr("checked", false);
-                    jQuery('#CAPITOL1_R190_C1').attr("checked", false); jQuery('#CAPITOL1_R190_C2').attr("checked", false);
+            //     else if (group == "CAPITOL1_R130_C2") {
+            //         jQuery('#CAPITOL2').hide(); jQuery('#CAPITOL2_HEADER').hide();
+            //         jQuery('#CAPITOL3').hide(); jQuery('#CAPITOL3_HEADER').hide();
+            //         jQuery('#CAPITOL4').hide(); jQuery('#CAPITOL4_HEADER').hide();
+            //         jQuery('#CAPITOL5').hide(); jQuery('#CAPITOL5_HEADER').hide(); jQuery('#CAPITOL5_HEADER_NOTE').hide();
+            //         jQuery('#CAPITOL6').hide(); jQuery('#CAPITOL6_HEADER').hide(); jQuery('#CAPITOL6_HEADER_NOTE').hide();
+            //         jQuery('#CAPITOL7').hide(); jQuery('#CAPITOL7_HEADER').hide(); jQuery('#CAPITOL7_HEADER_NOTE').hide();
 
-                    document.getElementById("CAPITOL1_R191_C1").value = "";
-                    jQuery('#CAPITOL1_R192_C1').attr("checked", false); jQuery('#CAPITOL1_R192_C2').attr("checked", false);
-                    jQuery('#CAPITOL1_R193_C1').attr("checked", false); jQuery('#CAPITOL1_R193_C2').attr("checked", false);
-                    jQuery('#CAPITOL1_R194_C1').attr("checked", false); jQuery('#CAPITOL1_R194_C2').attr("checked", false);
-                    jQuery('#CAPITOL1_R195_C1').attr("checked", false); jQuery('#CAPITOL1_R195_C2').attr("checked", false);
-                    jQuery('#CAPITOL2_R210_C1').attr("checked", false); jQuery('#CAPITOL2_R210_C2').attr("checked", false);
-                    jQuery('#CAPITOL2_R221_C1').attr("checked", false); jQuery('#CAPITOL2_R221_C2').attr("checked", false);
-                    jQuery('#CAPITOL2_R222_C1').attr("checked", false); jQuery('#CAPITOL2_R222_C2').attr("checked", false);
-                    jQuery('#CAPITOL2_R223_C1').attr("checked", false); jQuery('#CAPITOL2_R223_C2').attr("checked", false);
-                    jQuery('#CAPITOL2_R224_C1').attr("checked", false); jQuery('#CAPITOL2_R224_C2').attr("checked", false);
-                    jQuery('#CAPITOL2_R230_C1').attr("checked", false); jQuery('#CAPITOL2_R230_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R310_C1').attr("checked", false); jQuery('#CAPITOL3_R310_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R320_C1').attr("checked", false); jQuery('#CAPITOL3_R320_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R321_C1').attr("checked", false); jQuery('#CAPITOL3_R321_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R322_C1').attr("checked", false); jQuery('#CAPITOL3_R322_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R323_C1').attr("checked", false); jQuery('#CAPITOL3_R323_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R324_C1').attr("checked", false); jQuery('#CAPITOL3_R324_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R325_C1').attr("checked", false); jQuery('#CAPITOL3_R325_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R326_C1').attr("checked", false); jQuery('#CAPITOL3_R326_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R327_C1').attr("checked", false); jQuery('#CAPITOL3_R327_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R328_C1').attr("checked", false); jQuery('#CAPITOL3_R328_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R329_C1').attr("checked", false); jQuery('#CAPITOL3_R329_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R330_C1').attr("checked", false); jQuery('#CAPITOL3_R330_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R410_C1').attr("checked", false); jQuery('#CAPITOL4_R410_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R411_C1').attr("checked", false); jQuery('#CAPITOL4_R411_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R412_C1').attr("checked", false); jQuery('#CAPITOL4_R412_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R413_C1').attr("checked", false); jQuery('#CAPITOL4_R413_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R414_C1').attr("checked", false); jQuery('#CAPITOL4_R414_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R415_C1').attr("checked", false); jQuery('#CAPITOL4_R415_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R416_C1').attr("checked", false); jQuery('#CAPITOL4_R416_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R417_C1').attr("checked", false); jQuery('#CAPITOL4_R417_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R418_C1').attr("checked", false); jQuery('#CAPITOL4_R418_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R419_C1').attr("checked", false); jQuery('#CAPITOL4_R419_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R420_C1').attr("checked", false); jQuery('#CAPITOL4_R420_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R430_C1').attr("checked", false); jQuery('#CAPITOL4_R430_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R421_C1').attr("checked", false); jQuery('#CAPITOL4_R421_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R422_C1').attr("checked", false); jQuery('#CAPITOL4_R422_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R423_C1').attr("checked", false); jQuery('#CAPITOL4_R423_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R424_C1').attr("checked", false); jQuery('#CAPITOL4_R424_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R425_C1').attr("checked", false); jQuery('#CAPITOL4_R425_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R426_C1').attr("checked", false); jQuery('#CAPITOL4_R426_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R431_C1').attr("checked", false); jQuery('#CAPITOL4_R431_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R432_C1').attr("checked", false); jQuery('#CAPITOL4_R432_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R433_C1').attr("checked", false); jQuery('#CAPITOL4_R433_C2').attr("checked", false);
-                    jQuery('#CAPITOL4_R440_C1').attr("checked", false); jQuery('#CAPITOL4_R440_C2').attr("checked", false);
-                    jQuery('#CAPITOL5_R510_C1').attr("checked", false); jQuery('#CAPITOL5_R510_C2').attr("checked", false);
-                    jQuery('#CAPITOL5_R511_C1').attr("checked", false); jQuery('#CAPITOL5_R511_C2').attr("checked", false);
-                    jQuery('#CAPITOL5_R512_C1').attr("checked", false); jQuery('#CAPITOL5_R512_C2').attr("checked", false);
-                    jQuery('#CAPITOL5_R513_C1').attr("checked", false); jQuery('#CAPITOL5_R513_C2').attr("checked", false);
-                    jQuery('#CAPITOL5_R514_C1').attr("checked", false); jQuery('#CAPITOL5_R514_C2').attr("checked", false);
-                    jQuery('#CAPITOL5_R515_C1').attr("checked", false); jQuery('#CAPITOL5_R515_C2').attr("checked", false);
-                    jQuery('#CAPITOL5_R520_C1').attr("checked", false); jQuery('#CAPITOL5_R520_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R611_C1').attr("checked", false); jQuery('#CAPITOL6_R611_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R612_C1').attr("checked", false); jQuery('#CAPITOL6_R612_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R620_C1').attr("checked", false); jQuery('#CAPITOL6_R620_C2').attr("checked", false);
-                    document.getElementById("CAPITOL6_R620_C1").value = "";
-                    document.getElementById("CAPITOL6_R631_C1").value = "";
-                    document.getElementById("CAPITOL6_R632_C1").value = "";
-                    document.getElementById("CAPITOL6_R633_C1").value = "";
-                    document.getElementById("CAPITOL6_R641_C1").value = "";
-                    document.getElementById("CAPITOL6_R642_C1").value = "";
-                    document.getElementById("CAPITOL6_R643_C1").value = "";
-                    jQuery('#CAPITOL6_R651_C1').attr("checked", false); jQuery('#CAPITOL6_R651_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R652_C1').attr("checked", false); jQuery('#CAPITOL6_R652_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R653_C1').attr("checked", false); jQuery('#CAPITOL6_R653_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R654_C1').attr("checked", false); jQuery('#CAPITOL6_R654_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R660_C1').attr("checked", false); jQuery('#CAPITOL6_R660_C2').attr("checked", false);
-                    document.getElementById("CAPITOL6_R670_C1").value = "";
-                    jQuery('#CAPITOL6_R681_C1').attr("checked", false); jQuery('#CAPITOL6_R681_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R682_C1').attr("checked", false); jQuery('#CAPITOL6_R682_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R683_C1').attr("checked", false); jQuery('#CAPITOL6_R683_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R684_C1').attr("checked", false); jQuery('#CAPITOL6_R684_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R710_C1').attr("checked", false); jQuery('#CAPITOL7_R710_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R721_C1').attr("checked", false); jQuery('#CAPITOL7_R721_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R722_C1').attr("checked", false); jQuery('#CAPITOL7_R722_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R730_C1').attr("checked", false); jQuery('#CAPITOL7_R730_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R740_C1').attr("checked", false); jQuery('#CAPITOL7_R740_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R750_C1').attr("checked", false); jQuery('#CAPITOL7_R750_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R761_C1').attr("checked", false); jQuery('#CAPITOL7_R761_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R762_C1').attr("checked", false); jQuery('#CAPITOL7_R762_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R763_C1').attr("checked", false); jQuery('#CAPITOL7_R763_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R764_C1').attr("checked", false); jQuery('#CAPITOL7_R764_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R765_C1').attr("checked", false); jQuery('#CAPITOL7_R765_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R766_C1').attr("checked", false); jQuery('#CAPITOL7_R766_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R767_C1').attr("checked", false); jQuery('#CAPITOL7_R767_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R768_C1').attr("checked", false); jQuery('#CAPITOL7_R768_C2').attr("checked", false);
-                    jQuery('#CAPITOL7_R770_C1').attr("checked", false); jQuery('#CAPITOL7_R770_C2').attr("checked", false);
 
-                }
-                else if (group == "CAPITOL1_R130_C1") {
-                    jQuery('#CAPITOL2').show(); jQuery('#CAPITOL2_HEADER').show();
-                    jQuery('#CAPITOL3').show(); jQuery('#CAPITOL3_HEADER').show();
-                    jQuery('#CAPITOL4').show(); jQuery('#CAPITOL4_HEADER').show();
-                    jQuery('#CAPITOL5').show(); jQuery('#CAPITOL5_HEADER').show(); jQuery('#CAPITOL5_HEADER_NOTE').show();
-                    jQuery('#CAPITOL6').show(); jQuery('#CAPITOL6_HEADER').show(); jQuery('#CAPITOL6_HEADER_NOTE').show();
-                    jQuery('#CAPITOL7').show(); jQuery('#CAPITOL7_HEADER').show(); jQuery('#CAPITOL7_HEADER_NOTE').show();
-                    jQuery('#CAPITOL1_R140').show(); jQuery('#CAPITOL1_R141').show(); jQuery('#CAPITOL1_R150').show(); jQuery('#CAPITOL1_R161').show();
-                    jQuery('#CAPITOL1_R162').show(); jQuery('#CAPITOL1_R163').show(); jQuery('#CAPITOL1_R164').show(); jQuery('#CAPITOL1_R165').show();
-                    jQuery('#CAPITOL1_R170').show(); jQuery('#CAPITOL1_R180').show(); jQuery('#CAPITOL1_R190').show(); jQuery('#CAPITOL1_R191').show();
-                    jQuery('#CAPITOL1_R192').show(); jQuery('#CAPITOL1_R193').show(); jQuery('#CAPITOL1_R194').show(); jQuery('#CAPITOL1_R195').show();
-                }
-                else if (group == "CAPITOL1_R150_C2") {
-                    jQuery('#CAPITOL1_R160').hide(); jQuery('#CAPITOL1_R161').hide(); jQuery('#CAPITOL1_R162').hide(); jQuery('#CAPITOL1_R163').hide(); jQuery('#CAPITOL1_R164').hide();
-                    jQuery('#CAPITOL1_R165').hide();
-                    jQuery('#CAPITOL1_R161_C1').attr("checked", false); jQuery('#CAPITOL1_R162_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R163_C1').attr("checked", false); jQuery('#CAPITOL1_R164_C1').attr("checked", false); jQuery('#CAPITOL1_R165_C1').attr("checked", false);
-                }
-                else if (group == "CAPITOL1_R150_C1") {
-                    jQuery('#CAPITOL1_R160').show(); jQuery('#CAPITOL1_R161').show(); jQuery('#CAPITOL1_R162').show(); jQuery('#CAPITOL1_R163').show(); jQuery('#CAPITOL1_R164').show();
-                    jQuery('#CAPITOL1_R165').show();
-                }
-                else if (group == "CAPITOL1_R170_C2") {
-                    jQuery('#CAPITOL1_R180').hide(); jQuery('#CAPITOL1_R181').hide();
-                    jQuery('#CAPITOL1_R180_C1').attr("checked", false); jQuery('#CAPITOL1_R180_C2').attr("checked", false);
-                    document.getElementById("CAPITOL1_R181_C1").value = "";
-                }
-                else if (group == "CAPITOL1_R170_C1") {
-                    jQuery('#CAPITOL1_R180').show(); jQuery('#CAPITOL1_R181').show();
-                }
-                else if (group == "CAPITOL3_R310_C2") {
-                    jQuery('#CAPITOL3_R320').hide(); jQuery('#CAPITOL3_R321').hide(); jQuery('#CAPITOL3_R322').hide(); jQuery('#CAPITOL3_R323').hide();
-                    jQuery('#CAPITOL3_R324').hide(); jQuery('#CAPITOL3_R325').hide(); jQuery('#CAPITOL3_R326').hide(); jQuery('#CAPITOL3_R327').hide();
-                    jQuery('#CAPITOL3_R328').hide(); jQuery('#CAPITOL3_R329').hide(); jQuery('#CAPITOL3_R330').hide();
+            //         jQuery('#CAPITOL1_R140').hide(); jQuery('#CAPITOL1_R141').hide(); jQuery('#CAPITOL1_R150').hide();
+            //         jQuery('#CAPITOL1_R160').hide(); jQuery('#CAPITOL1_R161').hide(); jQuery('#CAPITOL1_R162').hide(); jQuery('#CAPITOL1_R163').hide(); jQuery('#CAPITOL1_R164').hide();
+            //         jQuery('#CAPITOL1_R165').hide(); jQuery('#CAPITOL1_R170').hide(); jQuery('#CAPITOL1_R180').hide(); jQuery('#CAPITOL1_R190').hide();
+            //         jQuery('#CAPITOL1_R191').hide(); jQuery('#CAPITOL1_R192').hide(); jQuery('#CAPITOL1_R193').hide(); jQuery('#CAPITOL1_R194').hide(); 
+            //         jQuery('#CAPITOL1_R195').hide(); jQuery('#CAPITOL1_R192_Head').hide();
+            //         jQuery('#CAPITOL1_R140_C1').attr("checked", false); jQuery('#CAPITOL1_R140_C2').attr("checked", false);
+            //         document.getElementById("CAPITOL1_R141_C1").value = "";
+            //         jQuery('#CAPITOL1_R150_C1').attr("checked", false); jQuery('#CAPITOL1_R150_C2').attr("checked", false);
+            //         jQuery('#CAPITOL1_R161_C1').attr("checked", false); jQuery('#CAPITOL1_R162_C1').attr("checked", false); jQuery('#CAPITOL1_R163_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R164_C1').attr("checked", false); jQuery('#CAPITOL1_R165_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R170_C1').attr("checked", false); jQuery('#CAPITOL1_R170_C2').attr("checked", false);
+            //         jQuery('#CAPITOL1_R180_C1').attr("checked", false); jQuery('#CAPITOL1_R180_C2').attr("checked", false);
+            //         jQuery('#CAPITOL1_R190_C1').attr("checked", false); jQuery('#CAPITOL1_R190_C2').attr("checked", false);
+
+            //         document.getElementById("CAPITOL1_R191_C1").value = "";
+            //         jQuery('#CAPITOL1_R192_C1').attr("checked", false); jQuery('#CAPITOL1_R192_C2').attr("checked", false);
+            //         jQuery('#CAPITOL1_R193_C1').attr("checked", false); jQuery('#CAPITOL1_R193_C2').attr("checked", false);
+            //         jQuery('#CAPITOL1_R194_C1').attr("checked", false); jQuery('#CAPITOL1_R194_C2').attr("checked", false);
+            //         jQuery('#CAPITOL1_R195_C1').attr("checked", false); jQuery('#CAPITOL1_R195_C2').attr("checked", false);
+            //         jQuery('#CAPITOL2_R210_C1').attr("checked", false); jQuery('#CAPITOL2_R210_C2').attr("checked", false);
+            //         jQuery('#CAPITOL2_R221_C1').attr("checked", false); jQuery('#CAPITOL2_R221_C2').attr("checked", false);
+            //         jQuery('#CAPITOL2_R222_C1').attr("checked", false); jQuery('#CAPITOL2_R222_C2').attr("checked", false);
+            //         jQuery('#CAPITOL2_R223_C1').attr("checked", false); jQuery('#CAPITOL2_R223_C2').attr("checked", false);
+            //         jQuery('#CAPITOL2_R224_C1').attr("checked", false); jQuery('#CAPITOL2_R224_C2').attr("checked", false);
+            //         jQuery('#CAPITOL2_R230_C1').attr("checked", false); jQuery('#CAPITOL2_R230_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R310_C1').attr("checked", false); jQuery('#CAPITOL3_R310_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R320_C1').attr("checked", false); jQuery('#CAPITOL3_R320_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R321_C1').attr("checked", false); jQuery('#CAPITOL3_R321_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R322_C1').attr("checked", false); jQuery('#CAPITOL3_R322_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R323_C1').attr("checked", false); jQuery('#CAPITOL3_R323_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R324_C1').attr("checked", false); jQuery('#CAPITOL3_R324_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R325_C1').attr("checked", false); jQuery('#CAPITOL3_R325_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R326_C1').attr("checked", false); jQuery('#CAPITOL3_R326_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R327_C1').attr("checked", false); jQuery('#CAPITOL3_R327_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R328_C1').attr("checked", false); jQuery('#CAPITOL3_R328_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R329_C1').attr("checked", false); jQuery('#CAPITOL3_R329_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R330_C1').attr("checked", false); jQuery('#CAPITOL3_R330_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R410_C1').attr("checked", false); jQuery('#CAPITOL4_R410_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R411_C1').attr("checked", false); jQuery('#CAPITOL4_R411_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R412_C1').attr("checked", false); jQuery('#CAPITOL4_R412_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R413_C1').attr("checked", false); jQuery('#CAPITOL4_R413_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R414_C1').attr("checked", false); jQuery('#CAPITOL4_R414_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R415_C1').attr("checked", false); jQuery('#CAPITOL4_R415_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R416_C1').attr("checked", false); jQuery('#CAPITOL4_R416_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R417_C1').attr("checked", false); jQuery('#CAPITOL4_R417_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R418_C1').attr("checked", false); jQuery('#CAPITOL4_R418_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R419_C1').attr("checked", false); jQuery('#CAPITOL4_R419_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R420_C1').attr("checked", false); jQuery('#CAPITOL4_R420_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R430_C1').attr("checked", false); jQuery('#CAPITOL4_R430_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R421_C1').attr("checked", false); jQuery('#CAPITOL4_R421_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R422_C1').attr("checked", false); jQuery('#CAPITOL4_R422_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R423_C1').attr("checked", false); jQuery('#CAPITOL4_R423_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R424_C1').attr("checked", false); jQuery('#CAPITOL4_R424_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R425_C1').attr("checked", false); jQuery('#CAPITOL4_R425_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R426_C1').attr("checked", false); jQuery('#CAPITOL4_R426_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R431_C1').attr("checked", false); jQuery('#CAPITOL4_R431_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R432_C1').attr("checked", false); jQuery('#CAPITOL4_R432_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R433_C1').attr("checked", false); jQuery('#CAPITOL4_R433_C2').attr("checked", false);
+            //         jQuery('#CAPITOL4_R440_C1').attr("checked", false); jQuery('#CAPITOL4_R440_C2').attr("checked", false);
+            //         jQuery('#CAPITOL5_R510_C1').attr("checked", false); jQuery('#CAPITOL5_R510_C2').attr("checked", false);
+            //         jQuery('#CAPITOL5_R511_C1').attr("checked", false); jQuery('#CAPITOL5_R511_C2').attr("checked", false);
+            //         jQuery('#CAPITOL5_R512_C1').attr("checked", false); jQuery('#CAPITOL5_R512_C2').attr("checked", false);
+            //         jQuery('#CAPITOL5_R513_C1').attr("checked", false); jQuery('#CAPITOL5_R513_C2').attr("checked", false);
+            //         jQuery('#CAPITOL5_R514_C1').attr("checked", false); jQuery('#CAPITOL5_R514_C2').attr("checked", false);
+            //         jQuery('#CAPITOL5_R515_C1').attr("checked", false); jQuery('#CAPITOL5_R515_C2').attr("checked", false);
+            //         jQuery('#CAPITOL5_R520_C1').attr("checked", false); jQuery('#CAPITOL5_R520_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R611_C1').attr("checked", false); jQuery('#CAPITOL6_R611_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R612_C1').attr("checked", false); jQuery('#CAPITOL6_R612_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R620_C1').attr("checked", false); jQuery('#CAPITOL6_R620_C2').attr("checked", false);
+            //         document.getElementById("CAPITOL6_R620_C1").value = "";
+            //         document.getElementById("CAPITOL6_R631_C1").value = "";
+            //         document.getElementById("CAPITOL6_R632_C1").value = "";
+            //         document.getElementById("CAPITOL6_R633_C1").value = "";
+            //         document.getElementById("CAPITOL6_R641_C1").value = "";
+            //         document.getElementById("CAPITOL6_R642_C1").value = "";
+            //         document.getElementById("CAPITOL6_R643_C1").value = "";
+            //         jQuery('#CAPITOL6_R651_C1').attr("checked", false); jQuery('#CAPITOL6_R651_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R652_C1').attr("checked", false); jQuery('#CAPITOL6_R652_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R653_C1').attr("checked", false); jQuery('#CAPITOL6_R653_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R654_C1').attr("checked", false); jQuery('#CAPITOL6_R654_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R660_C1').attr("checked", false); jQuery('#CAPITOL6_R660_C2').attr("checked", false);
+            //         document.getElementById("CAPITOL6_R670_C1").value = "";
+            //         jQuery('#CAPITOL6_R681_C1').attr("checked", false); jQuery('#CAPITOL6_R681_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R682_C1').attr("checked", false); jQuery('#CAPITOL6_R682_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R683_C1').attr("checked", false); jQuery('#CAPITOL6_R683_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R684_C1').attr("checked", false); jQuery('#CAPITOL6_R684_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R710_C1').attr("checked", false); jQuery('#CAPITOL7_R710_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R721_C1').attr("checked", false); jQuery('#CAPITOL7_R721_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R722_C1').attr("checked", false); jQuery('#CAPITOL7_R722_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R730_C1').attr("checked", false); jQuery('#CAPITOL7_R730_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R740_C1').attr("checked", false); jQuery('#CAPITOL7_R740_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R750_C1').attr("checked", false); jQuery('#CAPITOL7_R750_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R761_C1').attr("checked", false); jQuery('#CAPITOL7_R761_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R762_C1').attr("checked", false); jQuery('#CAPITOL7_R762_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R763_C1').attr("checked", false); jQuery('#CAPITOL7_R763_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R764_C1').attr("checked", false); jQuery('#CAPITOL7_R764_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R765_C1').attr("checked", false); jQuery('#CAPITOL7_R765_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R766_C1').attr("checked", false); jQuery('#CAPITOL7_R766_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R767_C1').attr("checked", false); jQuery('#CAPITOL7_R767_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R768_C1').attr("checked", false); jQuery('#CAPITOL7_R768_C2').attr("checked", false);
+            //         jQuery('#CAPITOL7_R770_C1').attr("checked", false); jQuery('#CAPITOL7_R770_C2').attr("checked", false);
+
+            //     }
+            //     else if (group == "CAPITOL1_R130_C1") {
+            //         jQuery('#CAPITOL2').show(); jQuery('#CAPITOL2_HEADER').show();
+            //         jQuery('#CAPITOL3').show(); jQuery('#CAPITOL3_HEADER').show();
+            //         jQuery('#CAPITOL4').show(); jQuery('#CAPITOL4_HEADER').show();
+            //         jQuery('#CAPITOL5').show(); jQuery('#CAPITOL5_HEADER').show(); jQuery('#CAPITOL5_HEADER_NOTE').show();
+            //         jQuery('#CAPITOL6').show(); jQuery('#CAPITOL6_HEADER').show(); jQuery('#CAPITOL6_HEADER_NOTE').show();
+            //         jQuery('#CAPITOL7').show(); jQuery('#CAPITOL7_HEADER').show(); jQuery('#CAPITOL7_HEADER_NOTE').show();
+
+
+            //         // jQuery('#CAPITOL2').hide(); jQuery('#CAPITOL2_HEADER').hide();
+            //         // jQuery('#CAPITOL3').hide(); jQuery('#CAPITOL3_HEADER').hide();
+            //         // jQuery('#CAPITOL4').hide(); jQuery('#CAPITOL4_HEADER').hide();
+            //         // jQuery('#CAPITOL5').hide(); jQuery('#CAPITOL5_HEADER').hide(); jQuery('#CAPITOL5_HEADER_NOTE').hide();
+            //         // jQuery('#CAPITOL6').hide(); jQuery('#CAPITOL6_HEADER').hide(); jQuery('#CAPITOL6_HEADER_NOTE').hide();
+            //         // jQuery('#CAPITOL7').hide(); jQuery('#CAPITOL7_HEADER').hide(); jQuery('#CAPITOL7_HEADER_NOTE').hide();
+
+
+
+
+
+            //         jQuery('#CAPITOL1_R140').show(); jQuery('#CAPITOL1_R141').show(); jQuery('#CAPITOL1_R150').show(); jQuery('#CAPITOL1_R161').show();
+            //         jQuery('#CAPITOL1_R162').show(); jQuery('#CAPITOL1_R163').show(); jQuery('#CAPITOL1_R164').show(); jQuery('#CAPITOL1_R165').show();
+            //         jQuery('#CAPITOL1_R170').show(); jQuery('#CAPITOL1_R180').show(); jQuery('#CAPITOL1_R190').show(); jQuery('#CAPITOL1_R191').show();
+            //         jQuery('#CAPITOL1_R192').show(); jQuery('#CAPITOL1_R193').show(); jQuery('#CAPITOL1_R194').show(); jQuery('#CAPITOL1_R195').show();
+            //     }
+            //     else if (group == "CAPITOL1_R150_C2") {
+            //         jQuery('#CAPITOL1_R160').hide(); jQuery('#CAPITOL1_R161').hide(); jQuery('#CAPITOL1_R162').hide(); jQuery('#CAPITOL1_R163').hide(); jQuery('#CAPITOL1_R164').hide();
+            //         jQuery('#CAPITOL1_R165').hide();
+            //         jQuery('#CAPITOL1_R161_C1').attr("checked", false); jQuery('#CAPITOL1_R162_C1').attr("checked", false);
+            //         jQuery('#CAPITOL1_R163_C1').attr("checked", false); jQuery('#CAPITOL1_R164_C1').attr("checked", false); jQuery('#CAPITOL1_R165_C1').attr("checked", false);
+            //     }
+            //     else if (group == "CAPITOL1_R150_C1") {
+            //         jQuery('#CAPITOL1_R160').show(); jQuery('#CAPITOL1_R161').show(); jQuery('#CAPITOL1_R162').show(); jQuery('#CAPITOL1_R163').show(); jQuery('#CAPITOL1_R164').show();
+            //         jQuery('#CAPITOL1_R165').show();
+            //     }
+            //     else if (group == "CAPITOL1_R170_C2") {
+            //         jQuery('#CAPITOL1_R180').hide(); jQuery('#CAPITOL1_R181').hide();
+            //         jQuery('#CAPITOL1_R180_C1').attr("checked", false); jQuery('#CAPITOL1_R180_C2').attr("checked", false);
+            //         document.getElementById("CAPITOL1_R181_C1").value = "";
+            //     }
+            //     else if (group == "CAPITOL1_R170_C1") {
+            //         jQuery('#CAPITOL1_R180').show(); jQuery('#CAPITOL1_R181').show();
+            //     }
+            //     else if (group == "CAPITOL3_R310_C2") {
+            //         jQuery('#CAPITOL3_R320').hide(); jQuery('#CAPITOL3_R321').hide(); jQuery('#CAPITOL3_R322').hide(); jQuery('#CAPITOL3_R323').hide();
+            //         jQuery('#CAPITOL3_R324').hide(); jQuery('#CAPITOL3_R325').hide(); jQuery('#CAPITOL3_R326').hide(); jQuery('#CAPITOL3_R327').hide();
+            //         jQuery('#CAPITOL3_R328').hide(); jQuery('#CAPITOL3_R329').hide(); jQuery('#CAPITOL3_R330').hide();
                     
-                   jQuery('#CAPITOL3_R321_C1').attr("checked", false); jQuery('#CAPITOL3_R321_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R322_C1').attr("checked", false); jQuery('#CAPITOL3_R322_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R323_C1').attr("checked", false); jQuery('#CAPITOL3_R323_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R324_C1').attr("checked", false); jQuery('#CAPITOL3_R324_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R325_C1').attr("checked", false); jQuery('#CAPITOL3_R325_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R326_C1').attr("checked", false); jQuery('#CAPITOL3_R326_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R327_C1').attr("checked", false); jQuery('#CAPITOL3_R327_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R328_C1').attr("checked", false); jQuery('#CAPITOL3_R328_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R329_C1').attr("checked", false); jQuery('#CAPITOL3_R329_C2').attr("checked", false);
-                    jQuery('#CAPITOL3_R330_C1').attr("checked", false); jQuery('#CAPITOL3_R330_C2').attr("checked", false);
+            //        jQuery('#CAPITOL3_R321_C1').attr("checked", false); jQuery('#CAPITOL3_R321_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R322_C1').attr("checked", false); jQuery('#CAPITOL3_R322_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R323_C1').attr("checked", false); jQuery('#CAPITOL3_R323_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R324_C1').attr("checked", false); jQuery('#CAPITOL3_R324_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R325_C1').attr("checked", false); jQuery('#CAPITOL3_R325_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R326_C1').attr("checked", false); jQuery('#CAPITOL3_R326_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R327_C1').attr("checked", false); jQuery('#CAPITOL3_R327_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R328_C1').attr("checked", false); jQuery('#CAPITOL3_R328_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R329_C1').attr("checked", false); jQuery('#CAPITOL3_R329_C2').attr("checked", false);
+            //         jQuery('#CAPITOL3_R330_C1').attr("checked", false); jQuery('#CAPITOL3_R330_C2').attr("checked", false);
 
-                }
-                else if (group == "CAPITOL3_R310_C1") {
-                    jQuery('#CAPITOL3_R320').show(); jQuery('#CAPITOL3_R321').show(); jQuery('#CAPITOL3_R322').show(); jQuery('#CAPITOL3_R323').show();
-                    jQuery('#CAPITOL3_R324').show(); jQuery('#CAPITOL3_R325').show(); jQuery('#CAPITOL3_R326').show(); jQuery('#CAPITOL3_R327').show();
-                    jQuery('#CAPITOL3_R328').show(); jQuery('#CAPITOL3_R329').show(); jQuery('#CAPITOL3_R330').show();
-                }
-                else if (jQuery('#CAPITOL6_R611_C2').is(':checked') && jQuery('#CAPITOL6_R612_C2').is(':checked')) {
-                    jQuery('#CAPITOL6_R620').hide(); jQuery('#CAPITOL6_R630').hide(); jQuery('#CAPITOL6_R631').hide(); jQuery('#CAPITOL6_R632').hide(); jQuery('#CAPITOL6_R633').hide();
-                    jQuery('#CAPITOL6_R640').hide(); jQuery('#CAPITOL6_R641').hide(); jQuery('#CAPITOL6_R642').hide(); jQuery('#CAPITOL6_R643').hide(); jQuery('#CAPITOL6_R650').hide();
-                    jQuery('#CAPITOL6_R651').hide(); jQuery('#CAPITOL6_R652').hide(); jQuery('#CAPITOL6_R653').hide(); jQuery('#CAPITOL6_R654').hide();
+            //     }
+            //     else if (group == "CAPITOL3_R310_C1") {
+            //         jQuery('#CAPITOL3_R320').show(); jQuery('#CAPITOL3_R321').show(); jQuery('#CAPITOL3_R322').show(); jQuery('#CAPITOL3_R323').show();
+            //         jQuery('#CAPITOL3_R324').show(); jQuery('#CAPITOL3_R325').show(); jQuery('#CAPITOL3_R326').show(); jQuery('#CAPITOL3_R327').show();
+            //         jQuery('#CAPITOL3_R328').show(); jQuery('#CAPITOL3_R329').show(); jQuery('#CAPITOL3_R330').show();
+            //     }
+            //     else if (jQuery('#CAPITOL6_R611_C2').is(':checked') && jQuery('#CAPITOL6_R612_C2').is(':checked')) {
+            //         jQuery('#CAPITOL6_R620').hide(); jQuery('#CAPITOL6_R630').hide(); jQuery('#CAPITOL6_R631').hide(); jQuery('#CAPITOL6_R632').hide(); jQuery('#CAPITOL6_R633').hide();
+            //         jQuery('#CAPITOL6_R640').hide(); jQuery('#CAPITOL6_R641').hide(); jQuery('#CAPITOL6_R642').hide(); jQuery('#CAPITOL6_R643').hide(); jQuery('#CAPITOL6_R650').hide();
+            //         jQuery('#CAPITOL6_R651').hide(); jQuery('#CAPITOL6_R652').hide(); jQuery('#CAPITOL6_R653').hide(); jQuery('#CAPITOL6_R654').hide();
 
-                    document.getElementById("CAPITOL6_R620_C1").value = "";
-                    document.getElementById("CAPITOL6_R631_C1").value = "";
-                    document.getElementById("CAPITOL6_R632_C1").value = "";
-                    document.getElementById("CAPITOL6_R633_C1").value = "";
-                    document.getElementById("CAPITOL6_R641_C1").value = "";
-                    document.getElementById("CAPITOL6_R642_C1").value = "";
-                    document.getElementById("CAPITOL6_R643_C1").value = "";
-                    jQuery('#CAPITOL6_R651_C1').attr("checked", false); jQuery('#CAPITOL6_R651_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R652_C1').attr("checked", false); jQuery('#CAPITOL6_R652_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R653_C1').attr("checked", false); jQuery('#CAPITOL6_R653_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R654_C1').attr("checked", false); jQuery('#CAPITOL6_R654_C2').attr("checked", false);
-                }
-                else if (jQuery('#CAPITOL6_R611_C1').is(':checked') || jQuery('#CAPITOL6_R612_C1').is(':checked')) {
-                    jQuery('#CAPITOL6_R620').show(); jQuery('#CAPITOL6_R630').show(); jQuery('#CAPITOL6_R631').show(); jQuery('#CAPITOL6_R632').show(); jQuery('#CAPITOL6_R633').show();
-                    jQuery('#CAPITOL6_R640').show(); jQuery('#CAPITOL6_R641').show(); jQuery('#CAPITOL6_R642').show(); jQuery('#CAPITOL6_R643').show(); jQuery('#CAPITOL6_R650').show();
-                    jQuery('#CAPITOL6_R651').show(); jQuery('#CAPITOL6_R652').show(); jQuery('#CAPITOL6_R653').show(); jQuery('#CAPITOL6_R654').show();
-                }
-                if (group == "CAPITOL1_R140_C2") {
-                    jQuery('#CAPITOL1_R141').hide();
-                }
-                else if (group == "CAPITOL1_R140_C1") {
-                    jQuery('#CAPITOL1_R141').show();
-                }
-                if (group == "CAPITOL1_R180_C2") {
-                    jQuery('#CAPITOL1_R181').hide();
-                }
-                else if (group == "CAPITOL1_R180_C1") {
-                    jQuery('#CAPITOL1_R181').show();
-                }
-                if (group == "CAPITOL6_R660_C2") {
-                    jQuery('#CAPITOL6_R670').hide(); jQuery('#CAPITOL6_R680').hide(); jQuery('#CAPITOL6_R681').hide(); jQuery('#CAPITOL6_R682').hide();
-                    jQuery('#CAPITOL6_R683').hide(); jQuery('#CAPITOL6_R684').hide();
-                    document.getElementById("CAPITOL6_R670_C1").value = "";
-                    jQuery('#CAPITOL6_R681_C1').attr("checked", false); jQuery('#CAPITOL6_R681_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R682_C1').attr("checked", false); jQuery('#CAPITOL6_R682_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R683_C1').attr("checked", false); jQuery('#CAPITOL6_R683_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R684_C1').attr("checked", false); jQuery('#CAPITOL6_R684_C2').attr("checked", false);
-                }
-                else if (group == "CAPITOL6_R660_C1") {
-                    jQuery('#CAPITOL6_R670').show(); jQuery('#CAPITOL6_R680').show(); jQuery('#CAPITOL6_R681').show(); jQuery('#CAPITOL6_R682').show();
-                    jQuery('#CAPITOL6_R683').show(); jQuery('#CAPITOL6_R684').show();
-                }
-            });
+            //         document.getElementById("CAPITOL6_R620_C1").value = "";
+            //         document.getElementById("CAPITOL6_R631_C1").value = "";
+            //         document.getElementById("CAPITOL6_R632_C1").value = "";
+            //         document.getElementById("CAPITOL6_R633_C1").value = "";
+            //         document.getElementById("CAPITOL6_R641_C1").value = "";
+            //         document.getElementById("CAPITOL6_R642_C1").value = "";
+            //         document.getElementById("CAPITOL6_R643_C1").value = "";
+            //         jQuery('#CAPITOL6_R651_C1').attr("checked", false); jQuery('#CAPITOL6_R651_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R652_C1').attr("checked", false); jQuery('#CAPITOL6_R652_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R653_C1').attr("checked", false); jQuery('#CAPITOL6_R653_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R654_C1').attr("checked", false); jQuery('#CAPITOL6_R654_C2').attr("checked", false);
+            //     }
+            //     else if (jQuery('#CAPITOL6_R611_C1').is(':checked') || jQuery('#CAPITOL6_R612_C1').is(':checked')) {
+            //         jQuery('#CAPITOL6_R620').show(); jQuery('#CAPITOL6_R630').show(); jQuery('#CAPITOL6_R631').show(); jQuery('#CAPITOL6_R632').show(); jQuery('#CAPITOL6_R633').show();
+            //         jQuery('#CAPITOL6_R640').show(); jQuery('#CAPITOL6_R641').show(); jQuery('#CAPITOL6_R642').show(); jQuery('#CAPITOL6_R643').show(); jQuery('#CAPITOL6_R650').show();
+            //         jQuery('#CAPITOL6_R651').show(); jQuery('#CAPITOL6_R652').show(); jQuery('#CAPITOL6_R653').show(); jQuery('#CAPITOL6_R654').show();
+            //     }
+            //    else if (group == "CAPITOL1_R140_C2") {
+            //         jQuery('#CAPITOL1_R141').hide();
+            //     }
+            //     else if (group == "CAPITOL1_R140_C1") {
+            //         jQuery('#CAPITOL1_R141').show();
+            //     }
+            //     else if (group == "CAPITOL1_R180_C2") {
+            //         jQuery('#CAPITOL1_R181').hide();
+            //     }
+            //     else if (group == "CAPITOL1_R180_C1") {
+            //         jQuery('#CAPITOL1_R181').show();
+            //     }
+            //     else if (group == "CAPITOL6_R660_C2") {
+            //         jQuery('#CAPITOL6_R670').hide(); jQuery('#CAPITOL6_R680').hide(); jQuery('#CAPITOL6_R681').hide(); jQuery('#CAPITOL6_R682').hide();
+            //         jQuery('#CAPITOL6_R683').hide(); jQuery('#CAPITOL6_R684').hide();
+            //         document.getElementById("CAPITOL6_R670_C1").value = "";
+            //         jQuery('#CAPITOL6_R681_C1').attr("checked", false); jQuery('#CAPITOL6_R681_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R682_C1').attr("checked", false); jQuery('#CAPITOL6_R682_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R683_C1').attr("checked", false); jQuery('#CAPITOL6_R683_C2').attr("checked", false);
+            //         jQuery('#CAPITOL6_R684_C1').attr("checked", false); jQuery('#CAPITOL6_R684_C2').attr("checked", false);
+            //     }
+            //     else if (group == "CAPITOL6_R660_C1") {
+            //         jQuery('#CAPITOL6_R670').show(); jQuery('#CAPITOL6_R680').show(); jQuery('#CAPITOL6_R681').show(); jQuery('#CAPITOL6_R682').show();
+            //         jQuery('#CAPITOL6_R683').show(); jQuery('#CAPITOL6_R684').show();
+            //     }
+            // });
         }
     };
     function CAEMhide() {
