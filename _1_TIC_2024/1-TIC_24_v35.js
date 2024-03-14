@@ -1281,13 +1281,23 @@
         }
 
         if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL1_R111_C1 == false && values.CAPITOL1_R113_C1 == false)) {
-            webform.warnings.push({
-                'fieldName': 'CAPITOL1_R150_C1',
+            webform.errors.push({
+                'fieldName': 'CAPITOL1_R111_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-015. Rind.130 ati selectat DA atunci unul din Rind 111,113 trebuie sa fie DA')
+            });
+        }
+
+        if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL1_R111_C1 == false && values.CAPITOL1_R113_C1 == false)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL1_R113_C1',
                 'index': 0,
                 'msg': Drupal.t('Cod eroare: 71-015. Rind.130 ati selectat DA atunci unul din Rind 111,113 trebuie sa fie DA')
             });
         }
        
+
+
 
         webform.validatorsStatus.inf1 = 1;
         validateWebform();
