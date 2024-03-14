@@ -1591,6 +1591,32 @@
 // Capitol 9 
 
 
+        if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL9_R910_C1 == false && values.CAPITOL9_R910_C2 == false)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL9_R910_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-019.2 Daca este  Rind.130  DA atunci este   Rind.910 si invers')
+            });
+        }
+
+        if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL9_R910_C1 == false && values.CAPITOL9_R910_C2 == false)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL9_R910_C2',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-019.2 Daca este  Rind.130  DA atunci este   Rind.910 si invers')
+            });
+        }
+
+        if (values.CAPITOL1_R130_C1 == false && (values.CAPITOL9_R910_C1 == true || values.CAPITOL9_R910_C2 == true)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL1_R130_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-019.2 Daca este  Rind.130  DA atunci este   Rind.910 si invers')
+            });
+        }
+
+
+
         webform.validatorsStatus.inf1 = 1;
         validateWebform();
     };
