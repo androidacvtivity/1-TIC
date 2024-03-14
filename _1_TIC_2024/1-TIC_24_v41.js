@@ -301,10 +301,24 @@
                     jQuery('#CAPITOL1_R141').show();
                 }
                 else if (group == "CAPITOL1_R180_C2") {
-                    jQuery('#CAPITOL1_R181').hide();
+                    jQuery('#CAPITOL1_R190').hide();
+                    jQuery('#CAPITOL1_R191').hide();
+                    jQuery('#CAPITOL1_R192_Head').hide();
+                    jQuery('#CAPITOL1_R192').hide();
+                    jQuery('#CAPITOL1_R193').hide();
+                    jQuery('#CAPITOL1_R194').hide();
+                    jQuery('#CAPITOL1_R195').hide();
+
                 }
                 else if (group == "CAPITOL1_R180_C1") {
-                    jQuery('#CAPITOL1_R181').show();
+                    jQuery('#CAPITOL1_R190').show();
+                    jQuery('#CAPITOL1_R191').show();
+                    jQuery('#CAPITOL1_R192_Head').show();
+                    jQuery('#CAPITOL1_R192').show();
+                    jQuery('#CAPITOL1_R193').show();
+                    jQuery('#CAPITOL1_R194').show();
+                    jQuery('#CAPITOL1_R195').show();
+
                 }
                 else if (group == "CAPITOL6_R660_C2") {
                     jQuery('#CAPITOL6_R670').hide(); jQuery('#CAPITOL6_R680').hide(); jQuery('#CAPITOL6_R681').hide(); jQuery('#CAPITOL6_R682').hide();
@@ -1281,13 +1295,87 @@
         }
 
         if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL1_R111_C1 == false && values.CAPITOL1_R113_C1 == false)) {
-            webform.warnings.push({
-                'fieldName': 'CAPITOL1_R150_C1',
+            webform.errors.push({
+                'fieldName': 'CAPITOL1_R111_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-015. Rind.130 ati selectat DA atunci unul din Rind 111,113 trebuie sa fie DA')
+            });
+        }
+
+        if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL1_R111_C1 == false && values.CAPITOL1_R113_C1 == false)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL1_R113_C1',
                 'index': 0,
                 'msg': Drupal.t('Cod eroare: 71-015. Rind.130 ati selectat DA atunci unul din Rind 111,113 trebuie sa fie DA')
             });
         }
        
+        var r750_c1 = 0;
+        r750_c1  = Number(values.CAPITOL7_R750_C1);
+        
+        var r761_c1  = 0;
+        r761_c1  = Number(values.CAPITOL7_R761_C1);
+        var r761_c2 = 0;
+        r761_c2 = Number(values.CAPITOL7_R761_C2);
+        
+        var r762_c1 = 0;
+        r762_c1 = Number(values.CAPITOL7_R762_C1);
+        var r762_c2 = 0;
+        r762_c2 = Number(values.CAPITOL7_R762_C2);
+
+        var r763_c1 = 0;
+        r763_c1 = Number(values.CAPITOL7_R763_C1);
+        var r763_c2 = 0;
+        r763_c2 = Number(values.CAPITOL7_R763_C2);
+
+        var r764_c1 = 0;
+        r764_c1 = Number(values.CAPITOL7_R764_C1);
+        var r764_c2 = 0;
+        r764_c2 = Number(values.CAPITOL7_R764_C2);
+
+
+        var r765_c1 = 0;
+        r765_c1 = Number(values.CAPITOL7_R765_C1);
+        var r765_c2 = 0;
+        r765_c2 = Number(values.CAPITOL7_R765_C2);
+
+        var r766_c1 = 0;
+        r766_c1 = Number(values.CAPITOL7_R766_C1);
+        var r766_c2 = 0;
+        r766_c2 = Number(values.CAPITOL7_R766_C2);
+
+        var r767_c1 = 0;
+        r767_c1 = Number(values.CAPITOL7_R767_C1);
+        var r767_c2 = 0;
+        r767_c2 = Number(values.CAPITOL7_R767_C2);
+
+        var r768_c1 = 0;
+        r768_c1 = Number(values.CAPITOL7_R768_C1);
+        var r768_c2 = 0;
+        r768_c2 = Number(values.CAPITOL7_R768_C2);
+
+        var sum761_68 = r761_c1 + r761_c2 + r762_c1 + r762_c2 + r763_c1 + r763_c2 + r764_c1 + r764_c2 
+            + r765_c1 + r765_c2 + r766_c1 + r766_c2 + r767_c1 + r767_c2 + r768_c1 + r768_c2;
+
+        if (values.CAPITOL7_R750_C1 == true && (sum761_68 !== 8)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL7_R761_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-018. Daca este rind 750 DA atunci sunt 761,762,763,764,765,766,767,768 si invers ')
+            });
+        }
+
+        if (values.CAPITOL7_R750_C1 == false && (sum761_68 === 8)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL7_R750_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-018. Daca este rind 750 DA atunci sunt 761,762,763,764,765,766,767,768 si invers ')
+            });
+        }
+
+
+
+
 
         webform.validatorsStatus.inf1 = 1;
         validateWebform();

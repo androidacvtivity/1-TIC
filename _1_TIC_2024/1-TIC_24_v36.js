@@ -1281,13 +1281,38 @@
         }
 
         if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL1_R111_C1 == false && values.CAPITOL1_R113_C1 == false)) {
-            webform.warnings.push({
-                'fieldName': 'CAPITOL1_R150_C1',
+            webform.errors.push({
+                'fieldName': 'CAPITOL1_R111_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-015. Rind.130 ati selectat DA atunci unul din Rind 111,113 trebuie sa fie DA')
+            });
+        }
+
+        if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL1_R111_C1 == false && values.CAPITOL1_R113_C1 == false)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL1_R113_C1',
                 'index': 0,
                 'msg': Drupal.t('Cod eroare: 71-015. Rind.130 ati selectat DA atunci unul din Rind 111,113 trebuie sa fie DA')
             });
         }
        
+        var r750_c1 = 0;
+        r750_c1  = Number(values.CAPITOL7_R750_C1);
+        var r761_c1  = 0;
+        r761_c1  = Number(values.CAPITOL7_R761_C1);
+
+        if (values.CAPITOL7_R750_C1 == true && (values.CAPITOL7_R761_C1 == false && values.CAPITOL7_R761_C1 == false)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL7_R761_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-019. Daca este rind 750 DA atunci sunt 761,762,763,764,765,766,767,768')
+            });
+        }
+
+
+
+
+
 
         webform.validatorsStatus.inf1 = 1;
         validateWebform();
