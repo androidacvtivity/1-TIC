@@ -729,13 +729,13 @@
             });
         }
 
-        if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R430_C1 == true || values.CAPITOL4_R430_C2 == true)) {
-            webform.errors.push({
-                'fieldName': 'CAPITOL4_R430_C1',
-                'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.35. Rind.130 este Da atunci Rind.430 trebuie sa fie selectat DA sau NU')
-            });
-        }
+        // if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R430_C1 == true || values.CAPITOL4_R430_C2 == true)) {
+        //     webform.errors.push({
+        //         'fieldName': 'CAPITOL4_R430_C1',
+        //         'index': 0,
+        //         'msg': Drupal.t('Cod eroare: 71-001.35. Rind.130 este Da atunci Rind.430 trebuie sa fie selectat DA sau NU')
+        //     });
+        // }
 
         if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R421_C1 == true || values.CAPITOL4_R421_C2 == true)) {
             webform.errors.push({
@@ -1202,7 +1202,7 @@
             'msg': Drupal.t('Cod eroare: 71-003. Capitolul 5,6,7 nu trebuie completat')
           });
         }*/
-        var r900 = toFloat(values.CAPITOL7_R900_C1);
+        var r900 = values.CAPITOL7_R900_C1;
         if (!(r900 > 0 && r900 < 600)) {
             webform.errors.push({
                 'fieldName': 'CAPITOL7_R900_C1',
@@ -1236,13 +1236,13 @@
             });
         }
 
-        if ((r112 > 0 || r113 > 0) && r181 == 0) {
-            webform.warnings.push({
-                'fieldName': 'CAPITOL1_R181_C1',
-                'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-002.04. Rind.112 sau 113 > 0 atunci Rind 181 = 0 (dar trebuie sa fie > 0)')
-            });
-        }
+        // if ((r112 > 0 || r113 > 0) && r181 == 0) {
+        //     webform.warnings.push({
+        //         'fieldName': 'CAPITOL1_R181_C1',
+        //         'index': 0,
+        //         'msg': Drupal.t('Cod eroare: 71-002.04. Rind.112 sau 113 > 0 atunci Rind 181 = 0 (dar trebuie sa fie > 0)')
+        //     });
+        // }
 
         /*if (!(values.CAPITOL7_R900_C1 > 0 && values.CAPITOL7_R900_C1 < 600)) {
           webform.warnings.push({

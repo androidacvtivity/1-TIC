@@ -1236,13 +1236,13 @@
             });
         }
 
-        if ((r112 > 0 || r113 > 0) && r181 == 0) {
-            webform.warnings.push({
-                'fieldName': 'CAPITOL1_R181_C1',
-                'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-002.04. Rind.112 sau 113 > 0 atunci Rind 181 = 0 (dar trebuie sa fie > 0)')
-            });
-        }
+        // if ((r112 > 0 || r113 > 0) && r181 == 0) {
+        //     webform.warnings.push({
+        //         'fieldName': 'CAPITOL1_R181_C1',
+        //         'index': 0,
+        //         'msg': Drupal.t('Cod eroare: 71-002.04. Rind.112 sau 113 > 0 atunci Rind 181 = 0 (dar trebuie sa fie > 0)')
+        //     });
+        // }
 
         /*if (!(values.CAPITOL7_R900_C1 > 0 && values.CAPITOL7_R900_C1 < 600)) {
           webform.warnings.push({
