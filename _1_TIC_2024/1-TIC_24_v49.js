@@ -729,13 +729,13 @@
             });
         }
 
-        if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R430_C1 == true || values.CAPITOL4_R430_C2 == true)) {
-            webform.errors.push({
-                'fieldName': 'CAPITOL4_R430_C1',
-                'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.35. Rind.130 este Da atunci Rind.430 trebuie sa fie selectat DA sau NU')
-            });
-        }
+        // if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R430_C1 == true || values.CAPITOL4_R430_C2 == true)) {
+        //     webform.errors.push({
+        //         'fieldName': 'CAPITOL4_R430_C1',
+        //         'index': 0,
+        //         'msg': Drupal.t('Cod eroare: 71-001.35. Rind.130 este Da atunci Rind.430 trebuie sa fie selectat DA sau NU')
+        //     });
+        // }
 
         if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R421_C1 == true || values.CAPITOL4_R421_C2 == true)) {
             webform.errors.push({

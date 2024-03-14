@@ -729,13 +729,13 @@
             });
         }
 
-        if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R430_C1 == true || values.CAPITOL4_R430_C2 == true)) {
-            webform.errors.push({
-                'fieldName': 'CAPITOL4_R430_C1',
-                'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.35. Rind.130 este Da atunci Rind.430 trebuie sa fie selectat DA sau NU')
-            });
-        }
+        // if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R430_C1 == true || values.CAPITOL4_R430_C2 == true)) {
+        //     webform.errors.push({
+        //         'fieldName': 'CAPITOL4_R430_C1',
+        //         'index': 0,
+        //         'msg': Drupal.t('Cod eroare: 71-001.35. Rind.130 este Da atunci Rind.430 trebuie sa fie selectat DA sau NU')
+        //     });
+        // }
 
         if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R421_C1 == true || values.CAPITOL4_R421_C2 == true)) {
             webform.errors.push({
@@ -1202,10 +1202,10 @@
             'msg': Drupal.t('Cod eroare: 71-003. Capitolul 5,6,7 nu trebuie completat')
           });
         }*/
-        var r900 = toFloat(values.CAPITOL7_R900_C1);
-        if (!(r900 > 0 && r900 < 600)) {
+        var r900 = values.CAPITOL10_R900_C1;
+        if ((r900 > 0 && r900 > 600)) {
             webform.errors.push({
-                'fieldName': 'CAPITOL7_R900_C1',
+                'fieldName': 'CAPITOL10_R900_C1',
                 'index': 0,
                 'msg': Drupal.t('Cod eroare: 71-001.88. Rind.900 trebuie sa apartina intervalului 0-600')
             });
