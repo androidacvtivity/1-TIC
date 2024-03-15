@@ -235,12 +235,16 @@
                 else if (group == "CAPITOL1_R150_C2") {
                     jQuery('#CAPITOL1_R160').hide(); jQuery('#CAPITOL1_R161').hide(); jQuery('#CAPITOL1_R162').hide(); jQuery('#CAPITOL1_R163').hide(); jQuery('#CAPITOL1_R164').hide();
                     jQuery('#CAPITOL1_R165').hide();
+                    jQuery('#CAPITOL1_R170').hide();
                     jQuery('#CAPITOL1_R161_C1').attr("checked", false); jQuery('#CAPITOL1_R162_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R163_C1').attr("checked", false); jQuery('#CAPITOL1_R164_C1').attr("checked", false); jQuery('#CAPITOL1_R165_C1').attr("checked", false);
+                    jQuery('#CAPITOL1_R163_C1').attr("checked", false); jQuery('#CAPITOL1_R164_C1').attr("checked", false); 
+                    jQuery('#CAPITOL1_R170_C1').attr("checked", false); jQuery('#CAPITOL1_R164_C1').attr("checked", false); 
+                    jQuery('#CAPITOL1_R165_C1').attr("checked", false);
                 }
                 else if (group == "CAPITOL1_R150_C1") {
                     jQuery('#CAPITOL1_R160').show(); jQuery('#CAPITOL1_R161').show(); jQuery('#CAPITOL1_R162').show(); jQuery('#CAPITOL1_R163').show(); jQuery('#CAPITOL1_R164').show();
                     jQuery('#CAPITOL1_R165').show();
+                    jQuery('#CAPITOL1_R170').show();
                 }
                 else if (group == "CAPITOL1_R170_C2") {
                     jQuery('#CAPITOL1_R180').hide(); jQuery('#CAPITOL1_R181').hide();
@@ -335,7 +339,8 @@
                 }
 
                     //750
-                else if (group == "CAPITOL7_R750_C1") {
+                else if (group == "CAPITOL7_R750_C2") {
+                    jQuery('#CAPITOL7_R750').hide();
                     jQuery('#CAPITOL7_R761').hide();
                     jQuery('#CAPITOL7_R762').hide();
                     jQuery('#CAPITOL7_R763').hide();
@@ -355,7 +360,8 @@
                     jQuery('#CAPITOL7_R768_C1').attr("checked", false); jQuery('#CAPITOL7_R768_C2').attr("checked", false);
                     
                 }
-                else if (group == "CAPITOL7_R750_C2") {
+                else if (group == "CAPITOL7_R750_C1") {
+                    jQuery('#CAPITOL7_R750').show();
                     jQuery('#CAPITOL7_R761').show();
                     jQuery('#CAPITOL7_R761').show();
                     jQuery('#CAPITOL7_R762').show();
