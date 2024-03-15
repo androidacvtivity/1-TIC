@@ -232,24 +232,102 @@
                     jQuery('#CAPITOL1_R192').show(); 
                     jQuery('#CAPITOL1_R193').show(); jQuery('#CAPITOL1_R194').show(); jQuery('#CAPITOL1_R195').show();
                 }
+
+                else if (group == "CAPITOL1_R140_C2") {
+                    jQuery('#CAPITOL1_R141').hide();
+                }
+                else if (group == "CAPITOL1_R140_C1") {
+                    jQuery('#CAPITOL1_R141').show();
+                }
+
                 else if (group == "CAPITOL1_R150_C2") {
-                    jQuery('#CAPITOL1_R160').hide(); jQuery('#CAPITOL1_R161').hide(); jQuery('#CAPITOL1_R162').hide(); jQuery('#CAPITOL1_R163').hide(); jQuery('#CAPITOL1_R164').hide();
+                    jQuery('#CAPITOL1_R160').hide(); 
+                    jQuery('#CAPITOL1_R161').hide(); 
+                    jQuery('#CAPITOL1_R162').hide(); 
+                    jQuery('#CAPITOL1_R163').hide(); 
+                    jQuery('#CAPITOL1_R164').hide();
                     jQuery('#CAPITOL1_R165').hide();
+                    jQuery('#CAPITOL1_R170').hide();
                     jQuery('#CAPITOL1_R161_C1').attr("checked", false); jQuery('#CAPITOL1_R162_C1').attr("checked", false);
-                    jQuery('#CAPITOL1_R163_C1').attr("checked", false); jQuery('#CAPITOL1_R164_C1').attr("checked", false); jQuery('#CAPITOL1_R165_C1').attr("checked", false);
+                    jQuery('#CAPITOL1_R163_C1').attr("checked", false); jQuery('#CAPITOL1_R164_C1').attr("checked", false); 
+                    jQuery('#CAPITOL1_R165_C1').attr("checked", false);
+                    jQuery('#CAPITOL1_R170_C1').attr("checked", false); jQuery('#CAPITOL1_R170_C2').attr("checked", false); 
+                   
                 }
                 else if (group == "CAPITOL1_R150_C1") {
-                    jQuery('#CAPITOL1_R160').show(); jQuery('#CAPITOL1_R161').show(); jQuery('#CAPITOL1_R162').show(); jQuery('#CAPITOL1_R163').show(); jQuery('#CAPITOL1_R164').show();
+                    jQuery('#CAPITOL1_R160').show(); 
+                    jQuery('#CAPITOL1_R161').show(); 
+                    jQuery('#CAPITOL1_R162').show(); 
+                    jQuery('#CAPITOL1_R163').show(); 
+                    jQuery('#CAPITOL1_R164').show();
                     jQuery('#CAPITOL1_R165').show();
+                    jQuery('#CAPITOL1_R170').show();
                 }
-                else if (group == "CAPITOL1_R170_C2") {
-                    jQuery('#CAPITOL1_R180').hide(); jQuery('#CAPITOL1_R181').hide();
-                    jQuery('#CAPITOL1_R180_C1').attr("checked", false); jQuery('#CAPITOL1_R180_C2').attr("checked", false);
-                    document.getElementById("CAPITOL1_R181_C1").value = "";
+                // else if (group == "CAPITOL1_R180_C2") {
+                //     // jQuery('#CAPITOL1_R180').hide(); 
+                //     jQuery('#CAPITOL1_R190').hide();
+                //     jQuery('#CAPITOL1_R192').hide();
+                //     jQuery('#CAPITOL1_R193').hide();
+                //     jQuery('#CAPITOL1_R194').hide();
+                //     jQuery('#CAPITOL1_R195').hide();
+                //     // jQuery('#CAPITOL1_R180_C1').attr("checked", false); jQuery('#CAPITOL1_R180_C2').attr("checked", false);
+                //     jQuery('#CAPITOL1_R190_C1').attr("checked", false); jQuery('#CAPITOL1_R190_C2').attr("checked", false);
+                //     jQuery('#CAPITOL1_R192_C1').attr("checked", false); jQuery('#CAPITOL1_R192_C2').attr("checked", false);
+                //     jQuery('#CAPITOL1_R193_C1').attr("checked", false); jQuery('#CAPITOL1_R193_C2').attr("checked", false);
+                //     jQuery('#CAPITOL1_R194_C1').attr("checked", false); jQuery('#CAPITOL1_R194_C2').attr("checked", false);
+                //     jQuery('#CAPITOL1_R195_C1').attr("checked", false); jQuery('#CAPITOL1_R195_C2').attr("checked", false);
+                  
+                //     document.getElementById("CAPITOL1_R181_C1").value = "";
+                // }
+                // else if (group == "CAPITOL1_R170_C1") {
+                //     jQuery('#CAPITOL1_R180').show(); 
+                //     jQuery('#CAPITOL1_R190').show();
+                //     jQuery('#CAPITOL1_R192').show();
+                //     jQuery('#CAPITOL1_R193').show();
+                //     jQuery('#CAPITOL1_R194').show();
+                //     jQuery('#CAPITOL1_R195').show();
+                // }
+
+               
+                else if (group == "CAPITOL1_R180_C2") {
+                    jQuery('#CAPITOL1_R190').hide();
+                    jQuery('#CAPITOL1_R191').hide();
+                    jQuery('#CAPITOL1_R192_Head').hide();
+                    jQuery('#CAPITOL1_R192').hide();
+                    jQuery('#CAPITOL1_R193').hide();
+                    jQuery('#CAPITOL1_R194').hide();
+                    jQuery('#CAPITOL1_R195').hide();
+                    jQuery('#CAPITOL1_R190_C1').attr("checked", false); jQuery('#CAPITOL1_R190_C2').attr("checked", false);
+                    jQuery('#CAPITOL1_R191_C1').attr("checked", false); jQuery('#CAPITOL1_R191_C2').attr("checked", false);
+                    jQuery('#CAPITOL1_R192_C1').attr("checked", false); jQuery('#CAPITOL1_R192_C2').attr("checked", false);
+                    jQuery('#CAPITOL1_R193_C1').attr("checked", false); jQuery('#CAPITOL1_R193_C2').attr("checked", false);
+                    jQuery('#CAPITOL1_R194_C1').attr("checked", false); jQuery('#CAPITOL1_R194_C2').attr("checked", false);
+                    jQuery('#CAPITOL1_R195_C1').attr("checked", false); jQuery('#CAPITOL1_R195_C2').attr("checked", false);
+                    document.getElementById("CAPITOL1_R191_C1").value = "";
                 }
-                else if (group == "CAPITOL1_R170_C1") {
-                    jQuery('#CAPITOL1_R180').show(); jQuery('#CAPITOL1_R181').show();
+                else if (group == "CAPITOL1_R180_C1") {
+                    jQuery('#CAPITOL1_R190').show();
+                    jQuery('#CAPITOL1_R191').show();
+                    jQuery('#CAPITOL1_R192_Head').show();
+                    jQuery('#CAPITOL1_R192').show();
+                    jQuery('#CAPITOL1_R193').show();
+                    jQuery('#CAPITOL1_R194').show();
+                    jQuery('#CAPITOL1_R195').show();
+
                 }
+
+
+                else if (group == "CAPITOL1_R190_C2") {
+                    jQuery('#CAPITOL1_R191').hide();
+                    document.getElementById("CAPITOL1_R191_C1").value = "";
+                }
+                else if (group == "CAPITOL1_R190_C1") {
+                    jQuery('#CAPITOL1_R191').show();
+
+                }
+
+
+
                 else if (group == "CAPITOL3_R310_C2") {
                     jQuery('#CAPITOL3_R320').hide(); jQuery('#CAPITOL3_R321').hide(); jQuery('#CAPITOL3_R322').hide(); jQuery('#CAPITOL3_R323').hide();
                     jQuery('#CAPITOL3_R324').hide(); jQuery('#CAPITOL3_R325').hide(); jQuery('#CAPITOL3_R326').hide(); jQuery('#CAPITOL3_R327').hide();
@@ -272,70 +350,60 @@
                     jQuery('#CAPITOL3_R324').show(); jQuery('#CAPITOL3_R325').show(); jQuery('#CAPITOL3_R326').show(); jQuery('#CAPITOL3_R327').show();
                     jQuery('#CAPITOL3_R328').show(); jQuery('#CAPITOL3_R329').show(); jQuery('#CAPITOL3_R330').show();
                 }
-                else if (jQuery('#CAPITOL6_R611_C2').is(':checked') && jQuery('#CAPITOL6_R612_C2').is(':checked')) {
-                    jQuery('#CAPITOL6_R620').hide(); jQuery('#CAPITOL6_R630').hide(); jQuery('#CAPITOL6_R631').hide(); jQuery('#CAPITOL6_R632').hide(); jQuery('#CAPITOL6_R633').hide();
-                    jQuery('#CAPITOL6_R640').hide(); jQuery('#CAPITOL6_R641').hide(); jQuery('#CAPITOL6_R642').hide(); jQuery('#CAPITOL6_R643').hide(); jQuery('#CAPITOL6_R650').hide();
-                    jQuery('#CAPITOL6_R651').hide(); jQuery('#CAPITOL6_R652').hide(); jQuery('#CAPITOL6_R653').hide(); jQuery('#CAPITOL6_R654').hide();
+                
+               
+                
 
-                    document.getElementById("CAPITOL6_R620_C1").value = "";
-                    document.getElementById("CAPITOL6_R631_C1").value = "";
-                    document.getElementById("CAPITOL6_R632_C1").value = "";
-                    document.getElementById("CAPITOL6_R633_C1").value = "";
-                    document.getElementById("CAPITOL6_R641_C1").value = "";
-                    document.getElementById("CAPITOL6_R642_C1").value = "";
-                    document.getElementById("CAPITOL6_R643_C1").value = "";
-                    jQuery('#CAPITOL6_R651_C1').attr("checked", false); jQuery('#CAPITOL6_R651_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R652_C1').attr("checked", false); jQuery('#CAPITOL6_R652_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R653_C1').attr("checked", false); jQuery('#CAPITOL6_R653_C2').attr("checked", false);
-                    jQuery('#CAPITOL6_R654_C1').attr("checked", false); jQuery('#CAPITOL6_R654_C2').attr("checked", false);
-                }
-                else if (jQuery('#CAPITOL6_R611_C1').is(':checked') || jQuery('#CAPITOL6_R612_C1').is(':checked')) {
-                    jQuery('#CAPITOL6_R620').show(); jQuery('#CAPITOL6_R630').show(); jQuery('#CAPITOL6_R631').show(); jQuery('#CAPITOL6_R632').show(); jQuery('#CAPITOL6_R633').show();
-                    jQuery('#CAPITOL6_R640').show(); jQuery('#CAPITOL6_R641').show(); jQuery('#CAPITOL6_R642').show(); jQuery('#CAPITOL6_R643').show(); jQuery('#CAPITOL6_R650').show();
-                    jQuery('#CAPITOL6_R651').show(); jQuery('#CAPITOL6_R652').show(); jQuery('#CAPITOL6_R653').show(); jQuery('#CAPITOL6_R654').show();
-                }
-               else if (group == "CAPITOL1_R140_C2") {
-                    jQuery('#CAPITOL1_R141').hide();
-                }
-                else if (group == "CAPITOL1_R140_C1") {
-                    jQuery('#CAPITOL1_R141').show();
-                }
-                else if (group == "CAPITOL1_R180_C2") {
-                    jQuery('#CAPITOL1_R190').hide();
-                    jQuery('#CAPITOL1_R191').hide();
-                    jQuery('#CAPITOL1_R192_Head').hide();
-                    jQuery('#CAPITOL1_R192').hide();
-                    jQuery('#CAPITOL1_R193').hide();
-                    jQuery('#CAPITOL1_R194').hide();
-                    jQuery('#CAPITOL1_R195').hide();
+                // else if (jQuery('#CAPITOL6_R611_C2').is(':checked') && jQuery('#CAPITOL6_R612_C2').is(':checked')) {
+                //     jQuery('#CAPITOL6_R620').hide(); jQuery('#CAPITOL6_R630').hide(); jQuery('#CAPITOL6_R631').hide(); jQuery('#CAPITOL6_R632').hide(); jQuery('#CAPITOL6_R633').hide();
+                //     jQuery('#CAPITOL6_R640').hide(); jQuery('#CAPITOL6_R641').hide(); jQuery('#CAPITOL6_R642').hide(); jQuery('#CAPITOL6_R643').hide(); jQuery('#CAPITOL6_R650').hide();
+                //     jQuery('#CAPITOL6_R651').hide(); jQuery('#CAPITOL6_R652').hide(); jQuery('#CAPITOL6_R653').hide(); jQuery('#CAPITOL6_R654').hide();
 
-                }
-                else if (group == "CAPITOL1_R180_C1") {
-                    jQuery('#CAPITOL1_R190').show();
-                    jQuery('#CAPITOL1_R191').show();
-                    jQuery('#CAPITOL1_R192_Head').show();
-                    jQuery('#CAPITOL1_R192').show();
-                    jQuery('#CAPITOL1_R193').show();
-                    jQuery('#CAPITOL1_R194').show();
-                    jQuery('#CAPITOL1_R195').show();
+                //     document.getElementById("CAPITOL6_R620_C1").value = "";
+                //     document.getElementById("CAPITOL6_R631_C1").value = "";
+                //     document.getElementById("CAPITOL6_R632_C1").value = "";
+                //     document.getElementById("CAPITOL6_R633_C1").value = "";
+                //     document.getElementById("CAPITOL6_R641_C1").value = "";
+                //     document.getElementById("CAPITOL6_R642_C1").value = "";
+                //     document.getElementById("CAPITOL6_R643_C1").value = "";
+                //     jQuery('#CAPITOL6_R651_C1').attr("checked", false); jQuery('#CAPITOL6_R651_C2').attr("checked", false);
+                //     jQuery('#CAPITOL6_R652_C1').attr("checked", false); jQuery('#CAPITOL6_R652_C2').attr("checked", false);
+                //     jQuery('#CAPITOL6_R653_C1').attr("checked", false); jQuery('#CAPITOL6_R653_C2').attr("checked", false);
+                //     jQuery('#CAPITOL6_R654_C1').attr("checked", false); jQuery('#CAPITOL6_R654_C2').attr("checked", false);
+                // }
+                // else if (jQuery('#CAPITOL6_R611_C1').is(':checked') || jQuery('#CAPITOL6_R612_C1').is(':checked')) {
+                //     jQuery('#CAPITOL6_R620').show(); jQuery('#CAPITOL6_R630').show(); jQuery('#CAPITOL6_R631').show(); jQuery('#CAPITOL6_R632').show(); jQuery('#CAPITOL6_R633').show();
+                //     jQuery('#CAPITOL6_R640').show(); jQuery('#CAPITOL6_R641').show(); jQuery('#CAPITOL6_R642').show(); jQuery('#CAPITOL6_R643').show(); jQuery('#CAPITOL6_R650').show();
+                //     jQuery('#CAPITOL6_R651').show(); jQuery('#CAPITOL6_R652').show(); jQuery('#CAPITOL6_R653').show(); jQuery('#CAPITOL6_R654').show();
+                // }
 
-                }
-                else if (group == "CAPITOL6_R660_C2") {
-                    jQuery('#CAPITOL6_R670').hide(); jQuery('#CAPITOL6_R680').hide(); jQuery('#CAPITOL6_R681').hide(); jQuery('#CAPITOL6_R682').hide();
-                    jQuery('#CAPITOL6_R683').hide(); jQuery('#CAPITOL6_R684').hide();
-                    document.getElementById("CAPITOL6_R670_C1").value = "";
+
+                else if (
+                    group == "CAPITOL6_R660_C2"
+                   // jQuery('#CAPITOL6_R660_C2').is(':checked')
+                ) {
+                    jQuery('#CAPITOL6_R670').hide();
+                    jQuery('#CAPITOL6_R680').hide();
+                    jQuery('#CAPITOL6_R681').hide();
+                    jQuery('#CAPITOL6_R682').hide();
+                    jQuery('#CAPITOL6_R683').hide();
+                    jQuery('#CAPITOL6_R684').hide();
+                    
                     jQuery('#CAPITOL6_R681_C1').attr("checked", false); jQuery('#CAPITOL6_R681_C2').attr("checked", false);
                     jQuery('#CAPITOL6_R682_C1').attr("checked", false); jQuery('#CAPITOL6_R682_C2').attr("checked", false);
                     jQuery('#CAPITOL6_R683_C1').attr("checked", false); jQuery('#CAPITOL6_R683_C2').attr("checked", false);
                     jQuery('#CAPITOL6_R684_C1').attr("checked", false); jQuery('#CAPITOL6_R684_C2').attr("checked", false);
+                    document.getElementById("CAPITOL6_R670_C1").value = "";
                 }
                 else if (group == "CAPITOL6_R660_C1") {
                     jQuery('#CAPITOL6_R670').show(); jQuery('#CAPITOL6_R680').show(); jQuery('#CAPITOL6_R681').show(); jQuery('#CAPITOL6_R682').show();
                     jQuery('#CAPITOL6_R683').show(); jQuery('#CAPITOL6_R684').show();
                 }
 
+
                     //750
-                else if (group == "CAPITOL7_R750_C1") {
+                else if (group == "CAPITOL7_R750_C2") {
+                    jQuery('#CAPITOL7_R750').hide();
                     jQuery('#CAPITOL7_R761').hide();
                     jQuery('#CAPITOL7_R762').hide();
                     jQuery('#CAPITOL7_R763').hide();
@@ -355,7 +423,8 @@
                     jQuery('#CAPITOL7_R768_C1').attr("checked", false); jQuery('#CAPITOL7_R768_C2').attr("checked", false);
                     
                 }
-                else if (group == "CAPITOL7_R750_C2") {
+                else if (group == "CAPITOL7_R750_C1") {
+                    jQuery('#CAPITOL7_R750').show();
                     jQuery('#CAPITOL7_R761').show();
                     jQuery('#CAPITOL7_R761').show();
                     jQuery('#CAPITOL7_R762').show();
@@ -371,9 +440,12 @@
 
                 else if (group == "CAPITOL8_R830_C2") {
                     jQuery('#CAPITOL8_R840').hide();
+                    jQuery('#CAPITOL8_R840_C1').attr("checked", false);
+                    jQuery('#CAPITOL8_R840_C2').attr("checked", false);
                 }
                 else if (group == "CAPITOL8_R830_C1") {
                     jQuery('#CAPITOL8_R840').show();
+
                 }
 
 
@@ -447,6 +519,32 @@
                     jQuery('#CAPITOL9_R971').show();
                 }
 
+
+                else if (jQuery('#CAPITOL6_R611_C2').is(':checked') && jQuery('#CAPITOL6_R612_C2').is(':checked')) {
+                    jQuery('#CAPITOL6_R620').hide(); jQuery('#CAPITOL6_R630').hide(); jQuery('#CAPITOL6_R631').hide(); jQuery('#CAPITOL6_R632').hide(); jQuery('#CAPITOL6_R633').hide();
+                    jQuery('#CAPITOL6_R640').hide(); jQuery('#CAPITOL6_R641').hide(); jQuery('#CAPITOL6_R642').hide(); jQuery('#CAPITOL6_R643').hide(); jQuery('#CAPITOL6_R650').hide();
+                    jQuery('#CAPITOL6_R651').hide(); jQuery('#CAPITOL6_R652').hide(); jQuery('#CAPITOL6_R653').hide(); jQuery('#CAPITOL6_R654').hide();
+
+                    document.getElementById("CAPITOL6_R620_C1").value = "";
+                    document.getElementById("CAPITOL6_R631_C1").value = "";
+                    document.getElementById("CAPITOL6_R632_C1").value = "";
+                    document.getElementById("CAPITOL6_R633_C1").value = "";
+                    document.getElementById("CAPITOL6_R641_C1").value = "";
+                    document.getElementById("CAPITOL6_R642_C1").value = "";
+                    document.getElementById("CAPITOL6_R643_C1").value = "";
+                    jQuery('#CAPITOL6_R651_C1').attr("checked", false); jQuery('#CAPITOL6_R651_C2').attr("checked", false);
+                    jQuery('#CAPITOL6_R652_C1').attr("checked", false); jQuery('#CAPITOL6_R652_C2').attr("checked", false);
+                    jQuery('#CAPITOL6_R653_C1').attr("checked", false); jQuery('#CAPITOL6_R653_C2').attr("checked", false);
+                    jQuery('#CAPITOL6_R654_C1').attr("checked", false); jQuery('#CAPITOL6_R654_C2').attr("checked", false);
+                }
+                else if (jQuery('#CAPITOL6_R611_C1').is(':checked') || jQuery('#CAPITOL6_R612_C1').is(':checked')) {
+                    jQuery('#CAPITOL6_R620').show(); jQuery('#CAPITOL6_R630').show(); jQuery('#CAPITOL6_R631').show(); jQuery('#CAPITOL6_R632').show(); jQuery('#CAPITOL6_R633').show();
+                    jQuery('#CAPITOL6_R640').show(); jQuery('#CAPITOL6_R641').show(); jQuery('#CAPITOL6_R642').show(); jQuery('#CAPITOL6_R643').show(); jQuery('#CAPITOL6_R650').show();
+                    jQuery('#CAPITOL6_R651').show(); jQuery('#CAPITOL6_R652').show(); jQuery('#CAPITOL6_R653').show(); jQuery('#CAPITOL6_R654').show();
+                }
+
+
+
             });
         }
     };
@@ -510,11 +608,20 @@
             });
         }
 
-        if (values.CAPITOL1_R180_C1 == true && (values.CAPITOL1_R181_C1 == 0)) {
+
+        if (jQuery('#CAPITOL1_R170_C2').is(':checked') && !(jQuery('#CAPITOL1_R180_C1').is(':checked') || jQuery('#CAPITOL1_R180_C2').is(':checked'))) {
             webform.errors.push({
-                'fieldName': 'CAPITOL1_R181_C1',
+                'fieldName': 'CAPITOL1_R180_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.6. Rind.180 este Da atunci Rind.181 > 0')
+                'msg': Drupal.t('Cod eroare: 71-001.5. Rind.170 este s atunci Rind.180 trebuie sa fie DA sau NU')
+            });
+        }
+
+        if (values.CAPITOL1_R190_C1 == true && (values.CAPITOL1_R191_C1 == 0)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL1_R191_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-001.6. Rind.190 este Da atunci Rind.191 > 0')
             });
         }
 
@@ -534,6 +641,67 @@
                 'msg': Drupal.t('Cod eroare: 71-001.8. Rind.150 este Da atunci unul din Rind.161,162,163,164,165 trebuie sa fie selectat')
             });
         }
+
+
+
+        //-----------------------------------------------------------------------------------------------------
+
+
+        var r190_c1 = 0;
+        r190_c1 = Number(values.CAPITOL1_R190_C1);
+        var r190_c2 = 0;
+        r190_c2 = Number(values.CAPITOL1_R190_C2);
+
+        var r192_c1 = 0;
+        r192_c1 = Number(values.CAPITOL1_R192_C1);
+        var r192_c2 = 0;
+        r192_c2 = Number(values.CAPITOL1_R192_C2);
+
+        var r193_c1 = 0;
+        r193_c1 = Number(values.CAPITOL1_R193_C1);
+        var r193_c2 = 0;
+        r193_c2 = Number(values.CAPITOL1_R193_C2);
+
+
+        var r194_c1 = 0;
+        r194_c1 = Number(values.CAPITOL1_R194_C1);
+        var r194_c2 = 0;
+        r194_c2 = Number(values.CAPITOL1_R194_C2);
+
+        var r195_c1 = 0;
+        r195_c1 = Number(values.CAPITOL1_R195_C1);
+        var r195_c2 = 0;
+        r195_c2 = Number(values.CAPITOL1_R195_C2);
+        
+
+        var sum190_195 = r190_c1 + r190_c2 + r192_c1 + r192_c2 + r193_c1 + r193_c2 + r194_c1 + r194_c2 + r195_c1 + r195_c2;
+        
+        if (values.CAPITOL1_R180_C1 == true  && (sum190_195 !== 5)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL1_R190_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-019.14 Daca exista CAP 1 rind 180 DA exista   randurile  190,192,193,194,195')
+            });
+        }
+
+
+        // if (values.CAPITOL1_R130_C1 == true && values.CAPITOL8_R830_C2 == true && (sum810_852 !== 6)) {
+        //     webform.errors.push({
+        //         'fieldName': 'CAPITOL1_R130_C1',
+        //         'index': 0,
+        //         'msg': Drupal.t('Cod eroare: 71-019. Daca exista CAP 1 rind 130 DA exista CAP 8 toate randurile  si invers ')
+        //     });
+        // }
+
+        // if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL8_R830_C2 == false && values.CAPITOL8_R830_C1 == false) && (sum810_852 !== 7)) {
+        //     webform.errors.push({
+        //         'fieldName': 'CAPITOL1_R130_C1',
+        //         'index': 0,
+        //         'msg': Drupal.t('Cod eroare: 71-019. Daca exista CAP 1 rind 130 DA exista CAP 8 toate randurile  si invers ')
+        //     });
+        // }
+
+        //--------------------------------------------------------------------------------------------------------
 
         if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL2_R210_C1 == true || values.CAPITOL2_R210_C2 == true)) {
             webform.errors.push({
@@ -981,6 +1149,49 @@
           });
         }
         */
+
+
+        var r651_c1 = 0;
+        r651_c1 = Number(values.CAPITOL6_R651_C1);
+        var r651_c2 = 0;
+        r651_c2 = Number(values.CAPITOL6_R651_C2);
+
+        var r652_c1 = 0;
+        r652_c1 = Number(values.CAPITOL6_R652_C1);
+        var r652_c2 = 0;
+        r652_c2 = Number(values.CAPITOL6_R652_C2);
+   
+        var r653_c1 = 0;
+        r653_c1 = Number(values.CAPITOL6_R653_C1);
+        var r653_c2 = 0;
+        r653_c2 = Number(values.CAPITOL6_R653_C2);
+
+        var r654_c1 = 0;
+        r654_c1 = Number(values.CAPITOL6_R654_C1);
+        var r654_c2 = 0;
+        r654_c2 = Number(values.CAPITOL6_R654_C2);
+
+
+        var sum651_654 = r651_c1 + r651_c2 + r652_c1 + r652_c2 + r653_c1 + r653_c2 + r654_c1 + r654_c2;
+
+        if (values.CAPITOL6_R611_C1 == true && (sum651_654 !== 4)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL6_R611_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-018.61 Rind.611 este Da atunci unul din Rind.651,652,653,654 trebuie sa fie selectat  ')
+            });
+        }
+
+        // if (values.CAPITOL7_R750_C1 == false && (sum761_68 === 8)) {
+        //     webform.errors.push({
+        //         'fieldName': 'CAPITOL7_R750_C1',
+        //         'index': 0,
+        //         'msg': Drupal.t('Cod eroare: 71-018. Daca este rind 750 DA atunci sunt 761,762,763,764,765,766,767,768 si invers ')
+        //     });
+        // }
+
+
+
         if (values.CAPITOL6_R611_C1 == true && (values.CAPITOL6_R651_C1 == false && values.CAPITOL6_R652_C1 == false && values.CAPITOL6_R653_C1 == false &&
             values.CAPITOL6_R654_C1 == false)) {
             webform.errors.push({
@@ -1239,12 +1450,13 @@
             'msg': Drupal.t('Cod eroare: 71-003. Capitolul 5,6,7 nu trebuie completat')
           });
         }*/
-        var r900 = values.CAPITOL10_R900_C1;
-        if ((r900 > 0 && r900 > 600)) {
+        var r900  = 0;
+        r900 = toFloat(values.CAPITOL10_R900_C1);
+        if ((values.CAPITOL10_R900_C1 == false || r900 > 600)) {
             webform.errors.push({
                 'fieldName': 'CAPITOL10_R900_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.88. Rind.900 trebuie sa apartina intervalului 0-600')
+                'msg': Drupal.t('Cod eroare: 71-001.88. Rind.900 trebuie sa apartina intervalului 1-600')
             });
         }
 
@@ -1265,7 +1477,7 @@
             });
         }
 
-        if ((r111 > 0 || r112 > 0) && r141 == 0) {
+        if ((r111 > 0 || r112 > 0) && r141 == 0 && values.CAPITOL1_R130_C1 == true) {
             webform.warnings.push({
                 'fieldName': 'CAPITOL1_R141_C1',
                 'index': 0,
@@ -1507,7 +1719,7 @@
         var sum810_852 = r810_c1 + r810_c2 + r821_c1 + r821_c2 + r822_c1 + r822_c2 + r830_c1 + r830_c2 + r840_c1 + r840_c2 + 
             r851_c1 + r851_c2 + r852_c1 + r852_c2;
 
-        if (values.CAPITOL1_R130_C1 == true && (sum810_852 !== 7)) {
+        if (values.CAPITOL1_R130_C1 == true && values.CAPITOL8_R830_C1 == true && (sum810_852 !== 7)) {
             webform.errors.push({
                 'fieldName': 'CAPITOL1_R130_C1',
                 'index': 0,
@@ -1515,13 +1727,31 @@
             });
         }
 
-        if (values.CAPITOL1_R130_C1 == false && (sum810_852 === 7)) {
+
+        if (values.CAPITOL1_R130_C1 == true && values.CAPITOL8_R830_C2 == true && (sum810_852 !== 6)) {
             webform.errors.push({
                 'fieldName': 'CAPITOL1_R130_C1',
                 'index': 0,
                 'msg': Drupal.t('Cod eroare: 71-019. Daca exista CAP 1 rind 130 DA exista CAP 8 toate randurile  si invers ')
             });
         }
+
+        if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL8_R830_C2 == false && values.CAPITOL8_R830_C1 == false)  && (sum810_852 !== 7)) {
+            webform.errors.push({
+                'fieldName': 'CAPITOL1_R130_C1',
+                'index': 0,
+                'msg': Drupal.t('Cod eroare: 71-019. Daca exista CAP 1 rind 130 DA exista CAP 8 toate randurile  si invers ')
+            });
+        }
+        
+
+        // if (values.CAPITOL1_R130_C1 == false && (sum810_852 === 7)) {
+        //     webform.errors.push({
+        //         'fieldName': 'CAPITOL1_R130_C1',
+        //         'index': 0,
+        //         'msg': Drupal.t('Cod eroare: 71-019. Daca exista CAP 1 rind 130 DA exista CAP 8 toate randurile  si invers ')
+        //     });
+        // }
 // Capitol 8
 
 
@@ -1613,15 +1843,15 @@
             webform.errors.push({
                 'fieldName': 'CAPITOL9_R910_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-019.1 Daca exista CAP 2 rind 910 DA exista CAP 9 toate randurile  si invers ')
+                'msg': Drupal.t('Cod eroare: 71-019.1 Daca exista CAP 9 rind 910 DA exista CAP 9 toate randurile  si invers ')
             });
         }
 
-        if (values.CAPITOL9_R910_C1 == false && (sum922_971 === 13)) {
+        if (values.CAPITOL9_R910_C2 == false && values.CAPITOL9_R910_C1 == false && (sum922_971 === 13)) {
             webform.errors.push({
                 'fieldName': 'CAPITOL9_R910_C1',
                 'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-019.1 Daca exista CAP 2 rind 910 DA exista CAP 9 toate randurile  si invers ')
+                'msg': Drupal.t('Cod eroare: 71-019.1 Daca exista CAP 9 rind 910 DA exista CAP 9 toate randurile  si invers ')
             });
         }
 
@@ -1689,7 +1919,7 @@
             });
         }
 
-        if (values.CAPITOL9_R910_C1 == false && (sum980_983 === 4)) {
+        if (values.CAPITOL1_R130_C1 == false && (sum980_983 === 4)) {
             webform.errors.push({
                 'fieldName': 'CAPITOL1_R130_C1',
                 'index': 0,

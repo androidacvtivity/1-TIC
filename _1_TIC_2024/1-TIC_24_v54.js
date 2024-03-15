@@ -335,7 +335,7 @@
                 }
 
                     //750
-                else if (group == "CAPITOL7_R750_C1") {
+                else if (group == "CAPITOL7_R750_C2") {
                     jQuery('#CAPITOL7_R761').hide();
                     jQuery('#CAPITOL7_R762').hide();
                     jQuery('#CAPITOL7_R763').hide();
@@ -355,7 +355,7 @@
                     jQuery('#CAPITOL7_R768_C1').attr("checked", false); jQuery('#CAPITOL7_R768_C2').attr("checked", false);
                     
                 }
-                else if (group == "CAPITOL7_R750_C2") {
+                else if (group == "CAPITOL7_R750_C1") {
                     jQuery('#CAPITOL7_R761').show();
                     jQuery('#CAPITOL7_R761').show();
                     jQuery('#CAPITOL7_R762').show();
