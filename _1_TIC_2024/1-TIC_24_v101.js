@@ -1029,7 +1029,7 @@
         }
 
 
-        if (values.CAPITOL1_R130_C1 == true && (values.CAPITOL4_R432_C1 == true || values.CAPITOL4_R431_C2 == true)) {
+        if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL4_R432_C1 == true || values.CAPITOL4_R432_C2 == true )) {
             webform.errors.push({
                 'fieldName': 'CAPITOL4_R432_C1',
                 'index': 0,
@@ -1082,13 +1082,7 @@
             });
         }
 
-        if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL5_R514_C1 == true || values.CAPITOL5_R514_C2 == true) && (caemFill.indexOf(values.CAEM.substr(0, 1)) !== -1 && !(values.CAEM.substr(0, 4) == 'S951'))) {
-            webform.errors.push({
-                'fieldName': 'CAPITOL5_R514_C1',
-                'index': 0,
-                'msg': Drupal.t('Cod eroare: 71-001.42. Rind.130 este Da atunci Rind.514 trebuie sa fie selectat DA sau NU')
-            });
-        }
+
 
         if (values.CAPITOL1_R130_C1 == true && !(values.CAPITOL5_R515_C1 == true || values.CAPITOL5_R515_C2 == true) && (caemFill.indexOf(values.CAEM.substr(0, 1)) !== -1 && !(values.CAEM.substr(0, 4) == 'S951'))) {
             webform.errors.push({
