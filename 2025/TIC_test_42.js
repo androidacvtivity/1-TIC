@@ -16,8 +16,9 @@
             
 
 
-            check_all(values);
-            check_511_512(values);
+               check_all(values);
+               check_511_512(values);
+               check_511_512_hide(values);
 
             if (values.CAPITOL5_R511_C2 == '1' && values.CAPITOL5_R512_C2  == '1') {
 
@@ -49,8 +50,20 @@
 
             else if (!(values.CAPITOL5_R511_C2 == '1' && values.CAPITOL5_R512_C2 == '1')) {
 
+                $('#CAPITOL5_R520').show();
+                $('#CAPITOL5_R530').show();
+                $('#CAPITOL5_R531').show();
+                $('#CAPITOL5_R532').show();
+                $('#CAPITOL5_R533').show();
+                $('#CAPITOL5_R540').show();
+                $('#CAPITOL5_R541').show();
+                $('#CAPITOL5_R542').show();
+                $('#CAPITOL5_R543').show();
 
                 }
+
+
+
 
            
         }
@@ -58,28 +71,14 @@
  
 })(jQuery);
 
-webform.afterLoad.bsc1_24 = function () {
-    var values = Drupal.settings.mywebform.values;
-    check_all(values);
-    check_511_512(values);
-
-}
-
-
-webform.beforeLoad.bsc1_24 = function () {
-    var values = Drupal.settings.mywebform.values;
-    check_all(values);
-    check_511_512(values);
-
-}
 
 
 webform.validators.bsc1_24 = function (v, allowOverpass) {
     var values = Drupal.settings.mywebform.values;
     validatePhoneNumber(values.PHONE);
     
-    check_all(values);
-    check_511_512(values);
+    // check_all(values);
+    // check_511_512(values);
 
     //Sort warnings & errors
     webform.warnings.sort(function (a, b) {
@@ -174,6 +173,59 @@ function check_511_512(values) {
      });
 
 }
+
+
+
+function check_511_512_hide(values) {
+
+    jQuery('input[type=checkbox]').change(function () {
+
+        if (jQuery('#CAPITOL5_R511_C2').is(':checked') && jQuery('#CAPITOL5_R512_C2').is(':checked')) {
+            
+            $('#CAPITOL5_R520').hide();
+            $('#CAPITOL5_R530').hide();
+            $('#CAPITOL5_R531').hide();
+            $('#CAPITOL5_R532').hide();
+            $('#CAPITOL5_R533').hide();
+            $('#CAPITOL5_R540').hide();
+            $('#CAPITOL5_R541').hide();
+            $('#CAPITOL5_R542').hide();
+            $('#CAPITOL5_R543').hide();
+
+            //Here  muste delete all valuie 
+
+            var inputIDs = [
+                "CAPITOL5_R520_C1", "CAPITOL5_R531_C1", "CAPITOL5_R532_C1",
+                "CAPITOL5_R533_C1", "CAPITOL5_R541_C1", "CAPITOL5_R542_C1", "CAPITOL5_R543_C1"
+            ];
+
+            inputIDs.forEach(function (id) {
+                var element = document.getElementById(id);
+                if (element) {
+                    element.value = "";
+                }
+            });
+
+
+        }
+        else if (!(jQuery('#CAPITOL5_R511_C2').is(':checked') && jQuery('#CAPITOL5_R512_C2').is(':checked'))) {
+            
+            $('#CAPITOL5_R520').show();
+            $('#CAPITOL5_R530').show();
+            $('#CAPITOL5_R531').show();
+            $('#CAPITOL5_R532').show();
+            $('#CAPITOL5_R533').show();
+            $('#CAPITOL5_R540').show();
+            $('#CAPITOL5_R541').show();
+            $('#CAPITOL5_R542').show();
+            $('#CAPITOL5_R543').show();
+
+        }
+
+    });
+
+}
+
 
 function getErrorMessage(errorCode) {
     return Drupal.t('Error code: @error_code', { '@error_code': errorCode });
