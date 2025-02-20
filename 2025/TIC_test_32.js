@@ -49,6 +49,15 @@
 
             else if (!(values.CAPITOL5_R511_C2 == '1' && values.CAPITOL5_R512_C2 == '1')) {
 
+                $('#CAPITOL5_R520').show();
+                $('#CAPITOL5_R530').show();
+                $('#CAPITOL5_R531').show();
+                $('#CAPITOL5_R532').show();
+                $('#CAPITOL5_R533').show();
+                $('#CAPITOL5_R540').show();
+                $('#CAPITOL5_R541').show();
+                $('#CAPITOL5_R542').show();
+                $('#CAPITOL5_R543').show();
 
                 }
 

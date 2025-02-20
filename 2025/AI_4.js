@@ -1,85 +1,56 @@
 (function ($) {
-   
     Drupal.behaviors.bsc1_24 = {
-
-        
         attach: function (context, settings) {
             jQuery('input.numeric').keypress(function (event) {
                 if (isNumberPressed(this, event) === false) {
                     event.preventDefault();
                 }
             });
-           
 
-     
             var values = Drupal.settings.mywebform.values;
-            
-
 
             check_all(values);
             check_511_512(values);
 
-            if (values.CAPITOL5_R511_C2 == '1' && values.CAPITOL5_R512_C2  == '1') {
-
-                $('#CAPITOL5_R520').hide();
-                $('#CAPITOL5_R530').hide();
-                $('#CAPITOL5_R531').hide();
-                $('#CAPITOL5_R532').hide();
-                $('#CAPITOL5_R533').hide();
-                $('#CAPITOL5_R540').hide();
-                $('#CAPITOL5_R541').hide();
-                $('#CAPITOL5_R542').hide();
-                $('#CAPITOL5_R543').hide();
-
-                //Here  muste delete all valuie 
-
-                var inputIDs = [
-                    "CAPITOL5_R520_C1", "CAPITOL5_R531_C1", "CAPITOL5_R532_C1",
-                    "CAPITOL5_R533_C1", "CAPITOL5_R541_C1", "CAPITOL5_R542_C1", "CAPITOL5_R543_C1"
-                ];
-
-                inputIDs.forEach(function (id) {
-                    var element = document.getElementById(id);
-                    if (element) {
-                        element.value = "";
-                    }
-                });
-
-                }
-
-            else if (!(values.CAPITOL5_R511_C2 == '1' && values.CAPITOL5_R512_C2 == '1')) {
-
-
-                }
-
-           
+            // Apelăm funcția care conține logica de ascundere/afișare
+            toggleCapitol5Rows(values);
         }
     };
- 
 })(jQuery);
 
-webform.afterLoad.bsc1_24 = function () {
-    var values = Drupal.settings.mywebform.values;
-    check_all(values);
-    check_511_512(values);
+// 
+//  Funcția modularizată pentru ascunderea/afișarea rândurilor
+function toggleCapitol5Rows(values) {
+    if (values.CAPITOL5_R511_C2 == '1' && values.CAPITOL5_R512_C2 == '1') {
+        
 
+        jQuery('#CAPITOL5_R520, #CAPITOL5_R530, #CAPITOL5_R531, #CAPITOL5_R532, #CAPITOL5_R533, #CAPITOL5_R540, #CAPITOL5_R541, #CAPITOL5_R542, #CAPITOL5_R543').hide();
+
+        // Ștergem valorile din inputurile asociate
+        var inputIDs = [
+            "CAPITOL5_R520_C1", "CAPITOL5_R531_C1", "CAPITOL5_R532_C1",
+            "CAPITOL5_R533_C1", "CAPITOL5_R541_C1", "CAPITOL5_R542_C1", "CAPITOL5_R543_C1"
+        ];
+
+        inputIDs.forEach(function (id) {
+            var element = document.getElementById(id);
+            if (element) {
+                element.value = "";
+            }
+        });
+    } else {
+        
+        jQuery('#CAPITOL5_R520, #CAPITOL5_R530, #CAPITOL5_R531, #CAPITOL5_R532, #CAPITOL5_R533, #CAPITOL5_R540, #CAPITOL5_R541, #CAPITOL5_R542, #CAPITOL5_R543').show();
+    }
 }
 
-
-webform.beforeLoad.bsc1_24 = function () {
-    var values = Drupal.settings.mywebform.values;
-    check_all(values);
-    check_511_512(values);
-
-}
 
 
 webform.validators.bsc1_24 = function (v, allowOverpass) {
     var values = Drupal.settings.mywebform.values;
     validatePhoneNumber(values.PHONE);
     
-    check_all(values);
-    check_511_512(values);
+   
 
     //Sort warnings & errors
     webform.warnings.sort(function (a, b) {
@@ -174,6 +145,10 @@ function check_511_512(values) {
      });
 
 }
+
+
+
+
 
 function getErrorMessage(errorCode) {
     return Drupal.t('Error code: @error_code', { '@error_code': errorCode });

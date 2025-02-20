@@ -16,8 +16,9 @@
             
 
 
-            check_all(values);
-            check_511_512(values);
+               check_all(values);
+               check_511_512(values);
+             
 
             if (values.CAPITOL5_R511_C2 == '1' && values.CAPITOL5_R512_C2  == '1') {
 
@@ -49,8 +50,20 @@
 
             else if (!(values.CAPITOL5_R511_C2 == '1' && values.CAPITOL5_R512_C2 == '1')) {
 
+                $('#CAPITOL5_R520').show();
+                $('#CAPITOL5_R530').show();
+                $('#CAPITOL5_R531').show();
+                $('#CAPITOL5_R532').show();
+                $('#CAPITOL5_R533').show();
+                $('#CAPITOL5_R540').show();
+                $('#CAPITOL5_R541').show();
+                $('#CAPITOL5_R542').show();
+                $('#CAPITOL5_R543').show();
 
                 }
+
+
+
 
            
         }
@@ -58,28 +71,13 @@
  
 })(jQuery);
 
-webform.afterLoad.bsc1_24 = function () {
-    var values = Drupal.settings.mywebform.values;
-    check_all(values);
-    check_511_512(values);
-
-}
-
-
-webform.beforeLoad.bsc1_24 = function () {
-    var values = Drupal.settings.mywebform.values;
-    check_all(values);
-    check_511_512(values);
-
-}
 
 
 webform.validators.bsc1_24 = function (v, allowOverpass) {
     var values = Drupal.settings.mywebform.values;
     validatePhoneNumber(values.PHONE);
     
-    check_all(values);
-    check_511_512(values);
+   
 
     //Sort warnings & errors
     webform.warnings.sort(function (a, b) {
@@ -174,6 +172,10 @@ function check_511_512(values) {
      });
 
 }
+
+
+
+
 
 function getErrorMessage(errorCode) {
     return Drupal.t('Error code: @error_code', { '@error_code': errorCode });
