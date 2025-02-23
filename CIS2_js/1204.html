@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Introducerea Rapoartelor
+    </title>
+    <link rel="stylesheet" type="text/css" href="script/easyui/themes/bootstrap/easyui.css" />
+    <link type="text/css" href="script/easyui/themes/icon.css" rel="stylesheet" />
+    <link type="text/css" href="script/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="script/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="script/bootstrap/css/simple-sidebar.css" />
+    <link type="text/css" href="css/Common.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="script/loading/dist/jquery.loading.min.css" />
+
+
+
+
+    <script type="text/javascript" charset="utf-8" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="script/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="script/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/Common.js"></script>
+    <script type="text/javascript" src="script/loading/dist/jquery.loading.min.js"></script>
+</head>
+
+<body>
+    <form method="post" action="./Input.aspx?capitol=1204&amp;capitol_vers=2014" id="F_MasterPage">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="iDnnvsrXbYzvb69tpS0q342GiKzfOtd0tOK9fKBffPmnK95D/rEqGK+ygMMvYuRQxYUPjZveD53Sy2n24i4GXTcnBR0Ibrr300bcmz9M5sTVQDvTP8svKStG/OgpRnp/bq51NRJWgP9ApKchljJL72zm7Jk64/uY3Jh9+sbBdoOU0ebLq/3JQJ3+Mu8TfpuDLUdUenztCr765vDzgtRJ87Cul6FOxca+ZVZLV64jcNy1Rce++GODpRJdXLrGTu73Q2b2+TGFONu/pwrpCW8snA==" />
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['F_MasterPage'];
+            if (!theForm) {
+                theForm = document.F_MasterPage;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+        </script>
+
+
+        <script
+            src="/CIS2-new/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZNVy52CEaRo3UPzb827is37_VcCLFVBGUoaqbtOsRq_3P3tIvAl40kbq2wLjjotCjg2&amp;t=636396543000000000"
+            type="text/javascript"></script>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CB7E2084" />
+            <input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE"
+                value="wvLEQ2b1-FGIeqOGb8LD_Np5wkEt3J9QRAnD0ZSjEKn-MwfQQFP83uqlh_6pYLGsZ0f_bfEPg0rSdah6Q9lR3tXISwX9lLFz4injfpYNOtM1" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="0fKKTDRNTSmi1QFXDBPXANppLTH3Q3QYZ4rk+OvlcmLUu24rs/gyc/80s9TDyeayK8YDUJECYqWkkGL+BVq03cmeT4NKYkywCiv/8+LiZylyjj31ZPRNJblV88WL5Tq/k3bSI9Ei/32ciGr+KELAkbvofuDKll69g/KwwZv0XE06NloanGcXrGwOAILRCpOmeLRHtUNEKJHgCeRDAD4n3Ws3XUsdfMGTIwCVWvAs9a8RoyrACXntC5IhwmioHORNBeCBNk70kLZe4fUVTTWkkzBL9A+its9MHjphU7iDiHIGxbx97uIFfHCiqLbd5BmA0HUTR6CAdm0rOyz49iFaaZA4DjsWMJu/Rlje+FrksYhiVrgvqOt5NyJkUp0g+rFK" />
+        </div>
+
+        <nav id="bootstrap-menu" class="navbar navbar-inverse navbar-fixed-top shadowed">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse container-fluid" id="bs-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="Clasificatoare.aspx"><span aria-hidden="true" style="padding-right: 7px;"
+                                class="glyphicon glyphicon-book"></span>Clasificatoare</a></li>
+                    <li><a href="Form.aspx"><span aria-hidden="true" style="padding-right: 7px;"
+                                class="glyphicon glyphicon-home"></span>Cercetari</a></li>
+                    <li><a href="Catalog.aspx"><span aria-hidden="true" style="padding-right: 7px;"
+                                class="glyphicon glyphicon-th-list"></span>Catalog</a></li>
+                    <li><a href="Input.aspx"><span aria-hidden="true" style="padding-right: 7px;"
+                                class="glyphicon glyphicon-list-alt"></span>Raport</a></li>
+                    <li><a href="OutputTables.aspx"><span aria-hidden="true" style="padding-right: 7px;"
+                                class="glyphicon glyphicon-list"></span>Tabele de iesire</a></li>
+                    <li><a href="Administrare.aspx"><span aria-hidden="true" style="padding-right: 7px;"
+                                class="glyphicon glyphicon-cog"></span>Administrare</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Vitalie Bancu
+                            <span aria-hidden="true" style="padding-right: 7px;"
+                                class="glyphicon glyphicon-chevron-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="help/Instrucituni_preliminare.pdf"><span aria-hidden="true"
+                                        style="padding-right: 7px;"
+                                        class="glyphicon glyphicon-warning-sign"></span>Ajutor</a></li>
+                            <li><a href="Login.aspx"><span aria-hidden="true" style="padding-right: 7px;"
+                                        class="glyphicon glyphicon-log-out"></span>Iesire</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+        <div id="main-content-holder" style="padding: 0; position: absolute;">
+
+
+
+
+            <link href="css/Input.css" type="text/css" rel="stylesheet" />
+            <script type="text/javascript" src="script/Input.js"></script>
+            <script type="text/javascript" src="script/Common.js"></script>
+            <script type="text/javascript" src="script/jquery.bootstrap-growl.min.js"></script>
+            <script>
+
+
+
+                function pd(obj, prec) {
+                    obj.value = obj.value.replace(',', '.');
+                    var txt = obj.value;
+                    var i;
+                    var coma = txt.indexOf(".");
+                    var lin = txt.indexOf("-");
+                    var symbol;
+                    for (i = 0; i < txt.length; i++) {
+                        symbol = txt.substring(i, i + 1);
+                        if (symbol < "0" || symbol > "9") {
+                            if (coma > 0 && i == coma) continue;
+                            if (i == 0 && lin == 0 && symbol == "-") continue;
+                            txt = txt.substring(0, i);
+                            obj.value = txt;
+                            break;
+                        }
+                        else {
+                            if (coma > 0 && (i - coma) > prec) {
+                                txt = txt.substring(0, i);
+                                obj.value = txt;
+                                break;
+                            }
+                        }
+                    }
+                }
+                function tabOnEnter(field, evt) {
+                    var keyCode = document.layers ? evt.which : document.all ? evt.keyCode : evt.keyCode;
+
+                    if ((keyCode == 37) || (keyCode == 39) || (keyCode == 33) || (keyCode == 34)) return true;
+
+                    if (keyCode != 13) {
+                        //$("#Tab_Data").attr("edited", true);
+                        document.getElementById('Tab_Data').setAttribute("Edited", 'true');
+                        return true;
+                    }
+                    else {
+                        getNextElement(field).focus();
+                        getNextElement(field).select();
+                        return false;
+                    }
+                }
+
+                function getNextElement(field) {
+                    var form = field.form;
+                    for (var e = 0; e < form.elements.length; e++)
+                        if (field == form.elements[e])
+                            break;
+                    return form.elements[++e % form.elements.length];
+                }
+
+                $(document).keydown(function (e) {
+
+                    switch (e.which) {
+                        case 45:
+                            window.location = $("#IS_GC").val() == "1" ? "?UnitCodeGC=0&NR_GOSP=0" : '?cuiio=0';
+                            break;
+                        case 34:
+                            var allcap = $('#' + 'ContentPlaceHolder_CAPITOL' + ' ul:eq(0) li').length;
+                            var i = 0;
+                            while (i < allcap) {
+                                if ($('#' + 'ContentPlaceHolder_CAPITOL' + ' ul:eq(0) li:eq(' + i + ')').attr('class') == 'active DataCellS')
+                                    if ($('#' + 'ContentPlaceHolder_CAPITOL' + ' ul:eq(0) li:eq(' + (i + 1) + ')').children().is('a')) {
+                                        loadingStart(gvWaitArea);
+                                        btnReportSave_OnClick();
+                                        loadingStop(gvWaitArea);
+                                        window.location = $('#' + 'ContentPlaceHolder_CAPITOL' + ' ul:eq(0) li:eq(' + (i + 1) + ')').children('a').attr('href');
+
+                                        break;
+                                    }
+                                i++;
+                            }
+
+                            break;
+                        case 33:
+                            var allcap = $('#ContentPlaceHolder_CAPITOL ul:eq(0) li').length;
+                            var i = 0;
+                            while (i < allcap) {
+                                if ($('#ContentPlaceHolder_CAPITOL ul:eq(0) li:eq(' + i + ')').attr('class') == 'active DataCellS')
+                                    if ($('#ContentPlaceHolder_CAPITOL ul:eq(0) li:eq(' + (i - 1) + ')').children().is('a')) {
+                                        loadingStart(gvWaitArea);
+                                        btnReportSave_OnClick();
+                                        loadingStop(gvWaitArea);
+                                        window.location = $('#ContentPlaceHolder_CAPITOL ul:eq(0) li:eq(' + (i - 1) + ')').children('a').attr('href');
+                                        break;
+
+                                    }
+                                i++;
+                            }
+                            break;
+
+                    }
+                });
+
+            </script>
+            <!-- Page elements --------------------------------------------------->
+            <div id="dataHolder" class="shadowed-small screen-center-horiz" style="margin-top: 10px;">
+                <input id="FormCode" type="hidden" value="71" />
+                <input id="PeriodId" type="hidden" value="2014" />
+                <input id="IsAdmin" type="hidden" value="1" />
+                <input id="IsAdminForm" type="hidden" value="1" />
+                <input id="IdUserCuatm" type="hidden" value="0000000" />
+                <input id="IdUser" type="hidden" value="734" />
+                <input id="FormCodeVers" type="hidden" value="2011" />
+                <input id="formDenShort" type="hidden" value="1-TIC" />
+                <input id="IS_GC" type="hidden" value="0" />
+
+                <div id="dataHeader" class="form-title table">
+                    <div style="width: 100%; margin-left: 5px;">
+                        <b>Situaţia privind utilizarea produselor tehnologiei informației și comunicațiilor în
+                            întreprinderi ( 1-TIC )</b>
+                        <!-- Get period and if change it -->
+                        <div class="dropdown" style="display: inline-block;">
+                            <select class="easyui-combobox" id="ComboBoxPeriod" name="ComboBboxName" labelposition="top"
+                                data-options="onChange: function (value) {
+                        document.location = '?QPerioada=' + value;
+                    }">
+
+
+                                <option selected value="2014">2025 - Anul</option>
+
+                                <option value="2013">2024 - Anul</option>
+
+                                <option value="2012">2023 - Anul [Trimis]</option>
+
+                                <option value="2011">2022 - Anul [Trimis]</option>
+
+                                <option value="2010">2021 - Anul [Trimis]</option>
+
+                                <option value="2009">2020 - Anul [Trimis]</option>
+
+                                <option value="2008">2019 - Anul [Trimis]</option>
+
+                                <option value="2007">2018 - Anul [Trimis]</option>
+
+                                <option value="2006">2017 - Anul [Trimis]</option>
+
+                                <option value="2005">2016 - Anul [Trimis]</option>
+
+                                <option value="2004">2015 - Anul [Trimis]</option>
+
+                                <option value="2003">2014 - Anul [Trimis]</option>
+
+                                <option value="2002">2013 - Anul [Trimis]</option>
+
+                                <option value="2001">2012 - Anul [Trimis]</option>
+
+                                <option value="2000">2011 - Anul [Trimis]</option>
+
+                                <option value="1999">2010 - Anul [Trimis]</option>
+
+                                <option value="1998">2009 - Anul [Trimis]</option>
+
+                            </select>
+
+                        </div>
+                        <!-- ----------------------------------------------- -->
+                        <!-- Desenam butonul pentru a afisa controalele -->
+                        <div style="display: inline-block; float: right; margin-right: 10px;">
+                            <button type="button" id="btnErrors" class="btn btn-xs btn-default"
+                                onclick="return btnReportErrors_OnClick();" title="Erori">&nbsp;</button>
+                        </div>
+                        <!-- ----------------------------------------------- -->
+                    </div>
+                </div>
+                <div id="dataReportHolder" style="background-color: white;">
+                    <div id="dataReportHeader" class="container-fluid report-bar" style="vertical-align: bottom;">
+
+                        <div id="dataReportHeaderCUIIO" class="col-sm-8" style="text-align: left;">
+                            CUIIO:
+                            <input type="text" id="txtReportCUIIO" class="easyui-numberbox" value="227548" data-options="width: 100, min: 0, precision: 0, required: true, prompt: 'CUIIO',
+					    icons:[{  iconCls:'icon-reload', handler: function(e){var v = $(e.data.target).textbox('getValue');}  }]" />
+
+                            <input type="text" id="txtReportPack" class="easyui-numberbox" value=""
+                                data-options="width: 50, min: 0, precision: 0,  prompt: 'Pachet'" />
+
+
+                            <span id="txtUnitName">&nbsp;</span>
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="dataReportWorkspace" class="shadowed-inset" style="overflow: auto;">
+                        <div id="dataQuestionnaireTabs" title="Page Up, Page Down">
+                            <span id="ContentPlaceHolder_CAPITOL">
+                                <ul id="quest-nav-tab" class="nav nav-pills" role="tablist">
+                                    <li class="DataCellC" role="presentation"><a role="tab" id="Titlul"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl05&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Input.aspx?capitol=-1&amp;capitol_vers=-1&quot;, false, true))"
+                                            style="color:Blue;">Titlul</a></li>
+                                    <li class="DataCellC" role="presentation"><a role="tab" hrefS="Save" id="1195"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl07&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1195&amp;capitol_vers=2011&quot;, false, true))"
+                                            style="color:Blue;">Cap. SR</a></li>
+                                    <li class="DataCellC" role="presentation"><a role="tab" hrefS="Save" id="1181"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl09&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1181&amp;capitol_vers=2012&quot;, false, true))"
+                                            style="color:Blue;">CAPITOL.1</a></li>
+                                    <li class="DataCellC" role="presentation"><a role="tab" hrefS="Save" id="1182"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl11&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1182&amp;capitol_vers=2014&quot;, false, true))"
+                                            style="color:Blue;">CAPITOL.2</a></li>
+                                    <li class="DataCellC" role="presentation"><a role="tab" hrefS="Save" id="1183"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl13&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1183&amp;capitol_vers=2014&quot;, false, true))"
+                                            style="color:Blue;">CAPITOL.3</a></li>
+                                    <li class="DataCellC" role="presentation"><a role="tab" hrefS="Save" id="1184"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl15&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1184&amp;capitol_vers=2014&quot;, false, true))"
+                                            style="color:Blue;">CAPITOL.4</a></li>
+                                    <li class="DataCellC" role="presentation"><a role="tab" hrefS="Save" id="1185"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl17&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1185&amp;capitol_vers=2014&quot;, false, true))"
+                                            style="color:Blue;">CAPITOL.5</a></li>
+                                    <li class="DataCellC" role="presentation"><a role="tab" hrefS="Save" id="1186"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl19&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1186&amp;capitol_vers=2014&quot;, false, true))"
+                                            style="color:Blue;">CAPITOL.6</a></li>
+                                    <li class="DataCellC" role="presentation"><a role="tab" hrefS="Save" id="1187"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl21&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1187&amp;capitol_vers=2014&quot;, false, true))"
+                                            style="color:Blue;">CAPITOL.7</a></li>
+                                    <li class="active DataCellS" role="presentation"><a role="tab" hrefS="Save"
+                                            id="1204"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl23&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1204&amp;capitol_vers=2014&quot;, false, true))"
+                                            style="color:White;">CAPITOL.8</a></li>
+                                    <li class="DataCellC" role="presentation"><a role="tab" hrefS="Save" id="1205"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl25&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1205&amp;capitol_vers=2014&quot;, false, true))"
+                                            style="color:Blue;">CAPITOL.9</a></li>
+                                    <li class="DataCellC" role="presentation"><a role="tab" hrefS="Save" id="1206"
+                                            href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder$ctl27&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/CIS2-new/Input.aspx?capitol=1206&amp;capitol_vers=2014&quot;, false, true))"
+                                            style="color:Blue;">CAPITOL.10</a></li>
+                                </ul>
+                            </span>
+                        </div>
+                        <table align="right">
+                            <tr>
+                                <td id="InputAlertMsg"></td>
+                            </tr>
+                        </table>
+                        <table id="dataQuestionnairePage">
+                            <tr>
+                                <td>
+
+                                    <div id="dataQuestionnaire" class="questionnaire">
+
+                                        <br />
+
+                                        <table
+                                            style="text-align: center; width: 100%; padding-bottom: 5px; padding-top: 2px">
+                                            <tr>
+                                                <td valign="middle">
+                                                    <span id="ContentPlaceHolder_CapitolName"
+                                                        style="font-family:Georgia;font-size:Small;font-weight:bold;">CAPITOL.8
+                                                        - Inteligența artificială (IA) </span>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
+                                        <center>
+                                            <!--------------------------------------------------------------------------------->
+                                            <table id="ContentPlaceHolder_tblFilial" style="display:none;">
+                                                <tr>
+                                                    <td>
+                                                        <div class="label label-default">Ancheta:</div>&nbsp;&nbsp;
+                                                    </td>
+                                                    <td id="ContentPlaceHolder_tblFilialB"></td>
+                                                    <td>&nbsp;&nbsp;&nbsp;
+                                                        <input name="ctl00$ContentPlaceHolder$txtFilial" type="text"
+                                                            id="ContentPlaceHolder_txtFilial" class="easyui-textbox"
+                                                            data-options="width: 90, prompt: &#39;0&#39;,
+					                            icons:[{  iconCls:&#39;icon-edit&#39;, handler: function(e){var filial = $(e.data.target).textbox(&#39;getValue&#39;); ChangeFilial(filial);}  }]"
+                                                            value="0" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!--------------------------------------------------------------------------------->
+
+                                            <table cellspacing="0" width="60%" id='Tab_Data' border='1' cellpadding="0">
+                                                <tr>
+                                                    <td width="30" align="center">Nr. rind.</td>
+                                                    <td width="300" align="center">Denumire</td>
+                                                    <td width="50" align="center"></td>
+                                                    <td width="50" align="center"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30" align="center">A</td>
+                                                    <td width="300" align="center">B</td>
+                                                    <td width="50" align="center">Da</td>
+                                                    <td width="50" align="center">Nu</td>
+                                                </tr>
+                                                <script>$(document).ready(function () {
+                                                        restoreState(); // Restore state on page load
+
+                                                        $("input[type=checkbox]").change(function () {
+                                                            ChangeCheckbox_1204(this.id);
+                                                            saveState(); // Save state when checkbox changes
+                                                        });
+                                                    });
+
+
+                                                    function saveState() {
+                                                        let state = {};
+                                                        $("input[type=checkbox]").each(function () {
+                                                            state[this.id] = this.checked;
+                                                        });
+
+                                                        let rowIds = [
+                                                            "83636", "83637", "83638", "83639", "83640", "83641", "83642",
+                                                            "83643", "83644", "83645", "83646", "83647", "83648", "83649",
+                                                            "83650", "83651", "83652"
+                                                        ];
+
+                                                        state["hiddenRows"] = rowIds.filter(id => $("#" + id).css("display") === "none");
+
+                                                        localStorage.setItem("checkboxState", JSON.stringify(state));
+                                                    }
+
+
+                                                    function restoreState() {
+                                                        let state = JSON.parse(localStorage.getItem("checkboxState"));
+                                                        if (!state) return;
+
+                                                        Object.keys(state).forEach(id => {
+                                                            if (id !== "hiddenRows") {
+                                                                $("#" + id).prop("checked", state[id]);
+                                                            }
+                                                        });
+
+                                                        state.hiddenRows.forEach(id => $("#" + id).hide());
+                                                    }
+
+
+                                                    function ChangeCheckbox_1204(itemId) {
+                                                        var isChecked = document.getElementById(itemId).checked;
+
+                                                        if (itemId === "71_1204_83635_810_1" && isChecked) {
+                                                            document.getElementById("71_1204_83635_810_2").checked = false;
+                                                            showRows();
+                                                        }
+                                                        else if (itemId === "71_1204_83635_810_2" && isChecked) {
+                                                            document.getElementById("71_1204_83635_810_1").checked = false;
+                                                            hideRows();
+                                                            uncheckDependentCheckboxes();
+                                                        }
+
+
+                                                        else if (itemId == "71_1204_83637_821_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83637_821_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83637_821_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83637_821_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83638_822_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83638_822_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83638_822_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83638_822_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83639_823_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83639_823_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83639_823_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83639_823_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83640_824_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83640_824_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83640_824_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83640_824_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83641_825_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83641_825_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83641_825_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83641_825_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83642_826_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83642_826_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83642_826_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83642_826_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83643_827_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83643_827_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83643_827_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83643_827_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83646_831_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83646_831_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83646_831_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83646_831_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83647_832_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83647_832_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83647_832_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83647_832_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83648_833_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83648_833_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83648_833_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83648_833_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83649_834_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83649_834_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83649_834_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83649_834_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83650_835_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83650_835_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83650_835_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83650_835_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83651_836_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83651_836_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83651_836_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83651_836_1").checked = false;
+                                                        }
+
+                                                        else if (itemId == "71_1204_83652_837_1" && isChecked == true) {
+                                                            document.getElementById("71_1204_83652_837_2").checked = false;
+                                                        }
+                                                        else if (itemId == "71_1204_83652_837_2" && isChecked == true) {
+                                                            document.getElementById("71_1204_83652_837_1").checked = false;
+                                                        }
+                                                        saveState(); // Save after each change
+                                                    }
+
+
+                                                    function showRows() {
+                                                        let rowIds = [
+                                                            "83636", "83637", "83638", "83639", "83640", "83641", "83642",
+                                                            "83643", "83644", "83645", "83646", "83647", "83648", "83649",
+                                                            "83650", "83651", "83652"
+                                                        ];
+                                                        rowIds.forEach(id => $("#" + id).show());
+                                                    }
+
+
+                                                    function hideRows() {
+                                                        let rowIds = [
+                                                            "83636", "83637", "83638", "83639", "83640", "83641", "83642",
+                                                            "83643", "83644", "83645", "83646", "83647", "83648", "83649",
+                                                            "83650", "83651", "83652"
+                                                        ];
+                                                        rowIds.forEach(id => $("#" + id).hide());
+                                                    }
+
+
+                                                    function uncheckDependentCheckboxes() {
+                                                        let checkboxIds = [
+                                                            "71_1204_83637_821_1", "71_1204_83637_821_2",
+                                                            "71_1204_83638_822_1", "71_1204_83638_822_2",
+                                                            "71_1204_83639_823_1", "71_1204_83639_823_2",
+                                                            "71_1204_83640_824_1", "71_1204_83640_824_2",
+                                                            "71_1204_83641_825_1", "71_1204_83641_825_2",
+                                                            "71_1204_83642_826_1", "71_1204_83642_826_2",
+                                                            "71_1204_83644_827_1", "71_1204_83644_827_2",
+                                                            "71_1204_83646_831_1", "71_1204_83646_831_2",
+                                                            "71_1204_83647_832_1", "71_1204_83647_832_2",
+                                                            "71_1204_83648_833_1", "71_1204_83648_833_2",
+                                                            "71_1204_83649_834_1", "71_1204_83649_834_2",
+                                                            "71_1204_83650_835_1", "71_1204_83650_835_2",
+                                                            "71_1204_83651_836_1", "71_1204_83651_836_2",
+                                                            "71_1204_83652_837_1", "71_1204_83652_837_2"
+                                                        ];
+                                                        checkboxIds.forEach(id => $("#" + id).prop("checked", false));
+                                                    }
+                                                </script>
+                                                <tr id='83635'>
+                                                    <td align='center'>810</td>
+                                                    <td align='left'><b>1. Întreprinderea dvs. utilizează tehnologii de
+                                                            inteligență artificială (IA)?</b><br>
+                                                        <small><i>&emsp;Dacă aţi selectat <u><b>NU</b></u> treceți la
+                                                                <b>Capitolul 9.</b></i></small>
+                                                    </td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83635_810_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83635_810_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83635_810_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83635_810_2')"></td>
+                                                </tr>
+                                                <tr id='83636'>
+                                                    <td align='center'>--</td>
+                                                    <td align='left'><b>2. Întreprinderea dvs. utilizează oricare dintre
+                                                            următoarele tehnologii de inteligență artificială (IA)?</b>
+                                                    </td>
+                                                    <td align='center'>&nbsp;</td>
+                                                    <td align='center'>&nbsp;</td>
+                                                </tr>
+                                                <tr id='83637'>
+                                                    <td align='center'>821</td>
+                                                    <td align='left'>&emsp;2.1. Tehnologii IA care efectuează analize
+                                                        ale limbajului scris (de exemplu, text mining)</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83637_821_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83637_821_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83637_821_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83637_821_2')"></td>
+                                                </tr>
+                                                <tr id='83638'>
+                                                    <td align='center'>822</td>
+                                                    <td align='left'>&emsp;2.2. Tehnologii IA care transformă limbajul
+                                                        vorbit în format care poate fi citit automat (recunoaștere
+                                                        vocală)</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83638_822_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83638_822_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83638_822_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83638_822_2')"></td>
+                                                </tr>
+                                                <tr id='83639'>
+                                                    <td align='center'>823</td>
+                                                    <td align='left'>&emsp;2.3. Tehnologii IA care generează limbaj
+                                                        scris, vorbit sau coduri de programare (generarea limbajului
+                                                        natural, sinteză vocală)</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83639_823_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83639_823_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83639_823_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83639_823_2')"></td>
+                                                </tr>
+                                                <tr id='83640'>
+                                                    <td align='center'>824</td>
+                                                    <td align='left'>&emsp;2.4. Tehnologii IA care generează imagini,
+                                                        materiale video, sunet/audio</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83640_824_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83640_824_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83640_824_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83640_824_2')"></td>
+                                                </tr>
+                                                <tr id='83641'>
+                                                    <td align='center'>825</td>
+                                                    <td align='left'>&emsp;2.5. Tehnologii IA care identifică obiecte
+                                                        sau persoane pe baza de imagini sau înregistrări video
+                                                        (recunoașterea imaginilor, prelucrarea imaginilor)</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83641_825_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83641_825_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83641_825_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83641_825_2')"></td>
+                                                </tr>
+                                                <tr id='83642'>
+                                                    <td align='center'>826</td>
+                                                    <td align='left'>&emsp;2.6. Învățare automată (de exemplu, învățare
+                                                        profundă) pentru analiza datelor</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83642_826_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83642_826_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83642_826_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83642_826_2')"></td>
+                                                </tr>
+                                                <tr id='83643'>
+                                                    <td align='center'>827</td>
+                                                    <td align='left'>&emsp;2.7. Tehnologii IA care automatizează
+                                                        diferite fluxuri de lucru sau ajută la luarea deciziilor (de
+                                                        exemplu, automatizarea proceselor robotice software bazate pe
+                                                        IA)</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83643_827_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83643_827_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83643_827_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83643_827_2')"></td>
+                                                </tr>
+                                                <tr id='83644'>
+                                                    <td align='center'>828</td>
+                                                    <td align='left'>&emsp;2.8. Tehnologii IA care permit deplasarea
+                                                        fizică a echipamentelor prin decizii autonome bazate pe
+                                                        observarea împrejurimilor (roboți autonomi, vehicule autonome,
+                                                        drone autonome)</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83644_828_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83644_828_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83644_828_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83644_828_2')"></td>
+                                                </tr>
+                                                <tr id='83645'>
+                                                    <td align='center'>--</td>
+                                                    <td align='left'><b>3. Întreprinderea dvs. utilizează software sau
+                                                            sisteme de inteligență artificială (IA) în oricare dintre
+                                                            următoarele scopuri?</b></td>
+                                                    <td align='center'>&nbsp;</td>
+                                                    <td align='center'>&nbsp;</td>
+                                                </tr>
+                                                <tr id='83646'>
+                                                    <td align='center'>831</td>
+                                                    <td align='left'>&emsp;3.1. marketing sau vânzări </td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83646_831_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83646_831_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83646_831_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83646_831_2')"></td>
+                                                </tr>
+                                                <tr id='83647'>
+                                                    <td align='center'>832</td>
+                                                    <td align='left'>&emsp;3.2. procese de producție sau de servicii
+                                                    </td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83647_832_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83647_832_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83647_832_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83647_832_2')"></td>
+                                                </tr>
+                                                <tr id='83648'>
+                                                    <td align='center'>833</td>
+                                                    <td align='left'>&emsp;3.3. organizarea sau gestionarea proceselor
+                                                        de administrare a afacerilor</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83648_833_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83648_833_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83648_833_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83648_833_2')"></td>
+                                                </tr>
+                                                <tr id='83649'>
+                                                    <td align='center'>834</td>
+                                                    <td align='left'>&emsp;3.4. pentru logistică</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83649_834_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83649_834_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83649_834_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83649_834_2')"></td>
+                                                </tr>
+                                                <tr id='83650'>
+                                                    <td align='center'>835</td>
+                                                    <td align='left'>&emsp;3.5. securitatea TIC</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83650_835_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83650_835_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83650_835_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83650_835_2')"></td>
+                                                </tr>
+                                                <tr id='83651'>
+                                                    <td align='center'>836</td>
+                                                    <td align='left'>&emsp;3.6. contabilitate, control sau gestionarea
+                                                        finanțelor</td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83651_836_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83651_836_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83651_836_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83651_836_2')"></td>
+                                                </tr>
+                                                <tr id='83652'>
+                                                    <td align='center'>837</td>
+                                                    <td align='left'>&emsp;3.7. activități de cercetare și dezvoltare
+                                                        (R&D) sau inovare (<i>cu excepția cercetării în domeniul IA</i>)
+                                                    </td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83652_837_1'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83652_837_1')"></td>
+                                                    <td align='center'><input type='checkbox'
+                                                            class='quest-checkbox idleField' id='71_1204_83652_837_2'
+                                                            query=false
+                                                            onchange="ChangeCheckbox_1204('71_1204_83652_837_2')"></td>
+                                                </tr>
+                                            </TABLE>
+
+                                        </center>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="dataReportToolBar" class="container-fluid report-bar">
+                        <div class="col-sm-4" style="text-align: left;">
+                            <button type="button" id="btnReportExport" class="btn btn-xs btn-default"
+                                onclick="return btnReportExport_OnClick();" title="Export in Excel"><span
+                                    class="glyphicon glyphicon-export"></span></button>
+
+                            <button type="button" id="btnReportHistory" class="btn btn-xs btn-default" title="Istoria"
+                                style="display: none"><span class="glyphicon glyphicon-edit"></span></button>
+
+                            <span id="txtReportUser"></span>
+                            &nbsp;&nbsp;
+                        </div>
+
+                        <div class="col-sm-8" style="text-align: right;">
+
+                            <button type="button" id="btnReportNew" class="btn btn-xs btn-info"
+                                onclick="return btnReportNew_OnClick();" title="Salveaza (Insert)">Raport Nou <span
+                                    class="glyphicon glyphicon-file"></span></button>
+                            <button type="button" id="btnReportSave" class="btn btn-xs btn-success"
+                                onclick="return btnReportSave_OnClick();" title="Salveaza (Ctrl+S)">Salveaza <span
+                                    class="glyphicon glyphicon-floppy-disk"></span></button>
+                            <button type="button" id="btnReportCheck" class="btn btn-xs btn-primary"
+                                onclick="return btnReportCheck_OnClick();" title="Verifica (F2)">Verifica <span
+                                    class="glyphicon glyphicon-check"></span></button>
+                            <button type="button" id="btnReportDelete" class="btn btn-xs btn-danger"
+                                onclick="return btnReportDelete_OnClick();" title="Sterge Raport">Sterge Raport <span
+                                    class="glyphicon glyphicon-trash"></span></button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div id="windowsHolder" style="display: none;">
+                    <!-- Error window -->
+                    <div id="windowReportErrors" class="easyui-window windowErrors" title="Lista greșelilor"
+                        style="width: 90%; height: 400px;"
+                        data-options="iconCls:'icon-tip', modal: true, collapsible: false, minimizable: false, closed: true">
+
+                        <table id="dataGridErrors" class="easyui-datagrid" data-options="fit: true, fitColumns: true, nowrap: true, striped: true, pagination: true, remoteSort: false, sortName:'CONTROL', loadMsg: 'Incarcare...',
+                    data: [],
+                    onLoadSuccess: dataGridErrors_OnLoadSuccess,
+                    onSelect: dataGridErrors_OnSelect,
+                    onClickRow: dataGridErrors_OnClick">
+                            <thead>
+
+                                <tr>
+                                    <th
+                                        data-options="field: 'FORM', width: 24, fixed: true, align: 'center', hidden: true">
+                                        !</th>
+                                    <th
+                                        data-options="field: 'FORM_VERS', width: 24, fixed: true, align: 'center', hidden: true">
+                                        !</th>
+                                    <th
+                                        data-options="field: 'CAPITOL', width: 24, fixed: true, align: 'center', hidden: true, editor: { type:'numberbox' }">
+                                        v</th>
+                                    <th
+                                        data-options="field: 'CAPITOL_VERS', width: 24, fixed: true, align: 'center', hidden: true, editor: { type:'numberbox' }">
+                                        v</th>
+                                    <th
+                                        data-options="field: 'DEN_SHORT', width: 24, fixed: true, align: 'center', hidden: true">
+                                        !</th>
+                                    <th
+                                        data-options="field: 'PRIORITATEA', width: 50, fixed: true, align: 'center', hidden: true">
+                                        PRIORITATEA</th>
+                                    <th
+                                        data-options="field: 'CUIIO', width: 100, fixed: true, align: 'center', styler: stylerRow, formatter: formatterCUIIO">
+                                        CUIIO</th>
+                                    <th
+                                        data-options="field: 'CONTROL', width: 80, fixed: true, align: 'center', styler: stylerRow">
+                                        Eroare</th>
+                                    <th data-options="field: 'FORMULA', width: 300, align: 'left', styler: stylerRow">
+                                        Formula</th>
+                                    <th data-options="field: 'REZULTAT', width: 200, align: 'left', styler: stylerRow">
+                                        Rezultat</th>
+                                </tr>
+
+                            </thead>
+                        </table>
+                    </div>
+                    <!-- View audit report -->
+                    <div id="windowAuditReport" class="easyui-window windowAuditReport"
+                        title="Lista fisierelor de audit" style="width:500px; height:240px;"
+                        data-options="iconCls:'icon-audit-report', modal: true, collapsible: false, minimizable: false, closed: true">
+                        <table id="dataGridFiles" class="easyui-datagrid" data-options="
+                    fit: true, fitColumns: true, nowrap: true, striped: true, remoteSort: false, singleSelect: true, sortName:'ORDINE', loadMsg: 'Incarcare...',
+                    data: []">
+                            <thead>
+                                <tr>
+                                    <th
+                                        data-options="field: 'reportChecked', width: 24, fixed: true, align: 'center', resizable: false, checkbox: true">
+                                        x</th>
+                                    <th
+                                        data-options="field: 'CUIIO', width: 24, fixed: true, align: 'center', hidden: true">
+                                        !</th>
+                                    <th
+                                        data-options="field: 'IDNO', width: 24, fixed: true, align: 'center', hidden: true">
+                                        !</th>
+                                    <th
+                                        data-options="field: 'ORDINE', width: 50, fixed: true, align: 'center', styler: stylerRow">
+                                        #</th>
+                                    <th
+                                        data-options="field: 'FILE_NAME', width: 300, fixed: true, align: 'left', styler: stylerRow">
+                                        Nume fisier</th>
+                                    <th
+                                        data-options="field: 'BTN', width: 50, fixed: true, align: 'center', styler: stylerRow">
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </form>
+</body>
+
+</html>
